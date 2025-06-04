@@ -37,9 +37,6 @@ const ModelSelector: React.FC<ModelSelectorProps> = ({ onSelectionChange }) => {
     price?: string;
   }>>([]);
 
-  // *** تم إزالة حالة isSelectorActive لأننا لا نريد إخفاء المكون في البداية ***
-  // const [isSelectorActive, setIsSelectorActive] = useState(false); 
-
   // عند تغيير السلسلة المختارة
   useEffect(() => {
     if (selectedModel) {
@@ -147,16 +144,14 @@ const ModelSelector: React.FC<ModelSelectorProps> = ({ onSelectionChange }) => {
   };
 
   return (
-    // *** تم إزالة منطق الإخفاء/الإظهار على الـ div الغلاف ***
     <div
       className={`relative bg-white/10 backdrop-blur-md rounded-lg p-6 shadow-lg`}
-      // *** تم إزالة onMouseEnter و onMouseLeave ***
     >
       <h2 className="text-2xl font-bold mb-6 text-center text-white">اختر سيارتك</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* اختيار السلسلة */}
-        <div className="space-y-2 relative z-30"> {/* زيادة z-index هنا */}
+        <div className="space-y-2 relative z-30">
           <label htmlFor="model-select" className="block text-white font-medium">
             سلسلة BMW
           </label>
@@ -164,7 +159,9 @@ const ModelSelector: React.FC<ModelSelectorProps> = ({ onSelectionChange }) => {
             id="model-select"
             value={selectedModel}
             onChange={handleModelChange}
-            className="w-full p-2 rounded-md bg-white/20 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            // *** إضافة فئات CSS هنا ***
+            className="w-full p-2 rounded-md bg-white/20 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-500
+                       dark-dropdown-options" // فئة مخصصة للخيار
             dir="rtl"
           >
             <option value="">اختر السلسلة</option>
@@ -177,7 +174,7 @@ const ModelSelector: React.FC<ModelSelectorProps> = ({ onSelectionChange }) => {
         </div>
 
         {/* اختيار السنة */}
-        <div className="space-y-2 relative z-20"> {/* زيادة z-index هنا */}
+        <div className="space-y-2 relative z-20">
           <label htmlFor="year-select" className="block text-white font-medium">
             سنة الإنتاج
           </label>
@@ -186,7 +183,9 @@ const ModelSelector: React.FC<ModelSelectorProps> = ({ onSelectionChange }) => {
             value={selectedYear}
             onChange={handleYearChange}
             disabled={!selectedModel}
-            className="w-full p-2 rounded-md bg-white/20 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50"
+            // *** إضافة فئات CSS هنا ***
+            className="w-full p-2 rounded-md bg-white/20 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50
+                       dark-dropdown-options" // فئة مخصصة للخيار
             dir="rtl"
           >
             <option value="">اختر السنة</option>
@@ -199,7 +198,7 @@ const ModelSelector: React.FC<ModelSelectorProps> = ({ onSelectionChange }) => {
         </div>
 
         {/* اختيار الجيل */}
-        <div className="space-y-2 relative z-10"> {/* زيادة z-index هنا */}
+        <div className="space-y-2 relative z-10">
           <label htmlFor="generation-select" className="block text-white font-medium">
             الجيل
           </label>
@@ -208,7 +207,9 @@ const ModelSelector: React.FC<ModelSelectorProps> = ({ onSelectionChange }) => {
             value={selectedGeneration}
             onChange={handleGenerationChange}
             disabled={!selectedYear}
-            className="w-full p-2 rounded-md bg-white/20 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50"
+            // *** إضافة فئات CSS هنا ***
+            className="w-full p-2 rounded-md bg-white/20 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50
+                       dark-dropdown-options" // فئة مخصصة للخيار
             dir="rtl"
           >
             <option value="">اختر الجيل</option>
