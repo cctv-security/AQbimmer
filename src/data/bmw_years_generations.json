@@ -1,0 +1,264 @@
+{
+  "1-series": {
+    "years": [
+      {"value": "2004-2011", "text": "2004-2011", "generations": [
+        {"value": "e87", "text": "E87"}
+      ]},
+      {"value": "2011-2019", "text": "2011-2019", "generations": [
+        {"value": "f20", "text": "F20"},
+        {"value": "f21", "text": "F21"}
+      ]},
+      {"value": "2019-present", "text": "2019-Present", "generations": [
+        {"value": "f40", "text": "F40"}
+      ]}
+    ]
+  },
+  "2-series": {
+    "years": [
+      {"value": "2014-2021", "text": "2014-2021", "generations": [
+        {"value": "f22", "text": "F22"},
+        {"value": "f23", "text": "F23"}
+      ]},
+      {"value": "2021-present", "text": "2021-Present", "generations": [
+        {"value": "g42", "text": "G42"}
+      ]}
+    ]
+  },
+  "2-active-tourer-gran-tourer": {
+    "years": [
+      {"value": "2014-2018", "text": "2014-2018", "generations": [
+        {"value": "f45", "text": "F45"},
+        {"value": "f46", "text": "F46"}
+      ]},
+      {"value": "2018-2021", "text": "2018-2021", "generations": [
+        {"value": "f45-lci", "text": "F45 LCI"},
+        {"value": "f46-lci", "text": "F46 LCI"}
+      ]},
+      {"value": "2021-present", "text": "2021-Present", "generations": [
+        {"value": "u06", "text": "U06"}
+      ]}
+    ]
+  },
+  "3-series": {
+    "years": [
+      {"value": "2005-2011", "text": "2005-2011", "generations": [
+        {"value": "e90", "text": "E90"},
+        {"value": "e91", "text": "E91"},
+        {"value": "e92", "text": "E92"},
+        {"value": "e93", "text": "E93"}
+      ]},
+      {"value": "2012-2018", "text": "2012-2018", "generations": [
+        {"value": "f30", "text": "F30"},
+        {"value": "f31", "text": "F31"},
+        {"value": "f34", "text": "F34"}
+      ]},
+      {"value": "2019-present", "text": "2019-Present", "generations": [
+        {"value": "g20", "text": "G20"},
+        {"value": "g21", "text": "G21"}
+      ]}
+    ]
+  },
+  "4-series": {
+    "years": [
+      {"value": "2013-2020", "text": "2013-2020", "generations": [
+        {"value": "f32", "text": "F32"},
+        {"value": "f33", "text": "F33"},
+        {"value": "f36", "text": "F36"}
+      ]},
+      {"value": "2020-present", "text": "2020-Present", "generations": [
+        {"value": "g22", "text": "G22"},
+        {"value": "g23", "text": "G23"},
+        {"value": "g26", "text": "G26"}
+      ]}
+    ]
+  },
+  "5-series": {
+    "years": [
+      {"value": "2003-2010", "text": "2003-2010", "generations": [
+        {"value": "e60", "text": "E60"},
+        {"value": "e61", "text": "E61"}
+      ]},
+      {"value": "2010-2016", "text": "2010-2016", "generations": [
+        {"value": "f10", "text": "F10"},
+        {"value": "f11", "text": "F11"}
+      ]},
+      {"value": "2017-2023", "text": "2017-2023", "generations": [
+        {"value": "g30", "text": "G30"},
+        {"value": "g31", "text": "G31"}
+      ]},
+      {"value": "2023-present", "text": "2023-Present", "generations": [
+        {"value": "g60", "text": "G60"}
+      ]}
+    ]
+  },
+  "6-series": {
+    "years": [
+      {"value": "2003-2010", "text": "2003-2010", "generations": [
+        {"value": "e63", "text": "E63"},
+        {"value": "e64", "text": "E64"}
+      ]},
+      {"value": "2011-2018", "text": "2011-2018", "generations": [
+        {"value": "f06", "text": "F06"},
+        {"value": "f12", "text": "F12"},
+        {"value": "f13", "text": "F13"}
+      ]}
+    ]
+  },
+  "7-series": {
+    "years": [
+      {"value": "2001-2008", "text": "2001-2008", "generations": [
+        {"value": "e65", "text": "E65"},
+        {"value": "e66", "text": "E66"}
+      ]},
+      {"value": "2008-2015", "text": "2008-2015", "generations": [
+        {"value": "f01", "text": "F01"},
+        {"value": "f02", "text": "F02"}
+      ]},
+      {"value": "2015-2022", "text": "2015-2022", "generations": [
+        {"value": "g11", "text": "G11"},
+        {"value": "g12", "text": "G12"}
+      ]},
+      {"value": "2022-present", "text": "2022-Present", "generations": [
+        {"value": "g70", "text": "G70"}
+      ]}
+    ]
+  },
+  "8-series": {
+    "years": [
+      {"value": "2018-present", "text": "2018-Present", "generations": [
+        {"value": "g14", "text": "G14"},
+        {"value": "g15", "text": "G15"},
+        {"value": "g16", "text": "G16"}
+      ]}
+    ]
+  },
+  "x1": {
+    "years": [
+      {"value": "2009-2015", "text": "2009-2015", "generations": [
+        {"value": "e84", "text": "E84"}
+      ]},
+      {"value": "2015-2022", "text": "2015-2022", "generations": [
+        {"value": "f48", "text": "F48"}
+      ]},
+      {"value": "2022-present", "text": "2022-Present", "generations": [
+        {"value": "u11", "text": "U11"}
+      ]}
+    ]
+  },
+  "x2": {
+    "years": [
+      {"value": "2017-present", "text": "2017-Present", "generations": [
+        {"value": "f39", "text": "F39"}
+      ]}
+    ]
+  },
+  "x3": {
+    "years": [
+      {"value": "2003-2010", "text": "2003-2010", "generations": [
+        {"value": "e83", "text": "E83"}
+      ]},
+      {"value": "2010-2017", "text": "2010-2017", "generations": [
+        {"value": "f25", "text": "F25"}
+      ]},
+      {"value": "2017-present", "text": "2017-Present", "generations": [
+        {"value": "g01", "text": "G01"}
+      ]}
+    ]
+  },
+  "x4": {
+    "years": [
+      {"value": "2014-2018", "text": "2014-2018", "generations": [
+        {"value": "f26", "text": "F26"}
+      ]},
+      {"value": "2018-present", "text": "2018-Present", "generations": [
+        {"value": "g02", "text": "G02"}
+      ]}
+    ]
+  },
+  "x5": {
+    "years": [
+      {"value": "1999-2006", "text": "1999-2006", "generations": [
+        {"value": "e53", "text": "E53"}
+      ]},
+      {"value": "2006-2013", "text": "2006-2013", "generations": [
+        {"value": "e70", "text": "E70"}
+      ]},
+      {"value": "2013-2018", "text": "2013-2018", "generations": [
+        {"value": "f15", "text": "F15"}
+      ]},
+      {"value": "2018-present", "text": "2018-Present", "generations": [
+        {"value": "g05", "text": "G05"}
+      ]}
+    ]
+  },
+  "x6": {
+    "years": [
+      {"value": "2008-2014", "text": "2008-2014", "generations": [
+        {"value": "e71", "text": "E71"},
+        {"value": "e72", "text": "E72"}
+      ]},
+      {"value": "2014-2019", "text": "2014-2019", "generations": [
+        {"value": "f16", "text": "F16"}
+      ]},
+      {"value": "2019-present", "text": "2019-Present", "generations": [
+        {"value": "g06", "text": "G06"}
+      ]}
+    ]
+  },
+  "x7": {
+    "years": [
+      {"value": "2018-present", "text": "2018-Present", "generations": [
+        {"value": "g07", "text": "G07"}
+      ]}
+    ]
+  },
+  "z4": {
+    "years": [
+      {"value": "2002-2008", "text": "2002-2008", "generations": [
+        {"value": "e85", "text": "E85"},
+        {"value": "e86", "text": "E86"}
+      ]},
+      {"value": "2009-2016", "text": "2009-2016", "generations": [
+        {"value": "e89", "text": "E89"}
+      ]},
+      {"value": "2018-present", "text": "2018-Present", "generations": [
+        {"value": "g29", "text": "G29"}
+      ]}
+    ]
+  },
+  "i3": {
+    "years": [
+      {"value": "2013-2022", "text": "2013-2022", "generations": [
+        {"value": "i01", "text": "I01"}
+      ]}
+    ]
+  },
+  "i4": {
+    "years": [
+      {"value": "2021-present", "text": "2021-Present", "generations": [
+        {"value": "g26", "text": "G26"}
+      ]}
+    ]
+  },
+  "i7": {
+    "years": [
+      {"value": "2022-present", "text": "2022-Present", "generations": [
+        {"value": "g70", "text": "G70"}
+      ]}
+    ]
+  },
+  "i8": {
+    "years": [
+      {"value": "2014-2020", "text": "2014-2020", "generations": [
+        {"value": "i12", "text": "I12"}
+      ]}
+    ]
+  },
+  "ix": {
+    "years": [
+      {"value": "2021-present", "text": "2021-Present", "generations": [
+        {"value": "i20", "text": "I20"}
+      ]}
+    ]
+  }
+}

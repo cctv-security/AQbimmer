@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AQ///BMW - تفعيلات BMW الحديثة</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bmw-blue: #005792;
+      --bmw-red: #d63031;
+      --bmw-white: #ffffff;
+      --bmw-gray: #f4f4f4;
+      --dark-bg: #121212;
+      --light-bg: #1e1e2f;
+      --text-color: #fff;
+      --muted-text: #ccc;
+    }
+
+    body {
+      background-color: var(--dark-bg);
+      color: var(--text-color);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      /* Background image styling */
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed; /* Fix background while scrolling */
+      transition: background-image 2s ease-in-out; /* Smooth transition for background image change */
+    }
+
+    /* Overlay to make text readable over dynamic background */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Slightly more transparent dark overlay */
+      z-index: -1;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--bmw-blue), var(--bmw-red));
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      z-index: 0; /* Ensure header is above overlay */
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .logo {
+      position: absolute; /* Position absolutely */
+      top: 1rem; /* 1rem from the top */
+      left: 1rem; /* 1rem from the left */
+      width: 80px; /* Smaller width for better fit */
+      height: 80px; /* Smaller height */
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg');
+      background-size: contain;
+      background-repeat: no-repeat; /* No repeat for a single logo */
+      background-position: center;
+      margin: 0; /* Remove default margin */
+      z-index: 10; /* Ensure logo is above other header content */
+    }
+
+    .container-fluid {
+      padding: 2rem 1rem;
+      position: relative; /* Ensure content is above overlay */
+      z-index: 0;
+    }
+
+    .card {
+      background-color: rgba(30, 30, 47, 0.9); /* Slightly transparent light-bg */
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+      border: none;
+      overflow: hidden;
+      height: 100%; /* Ensure cards take full height in their grid cell */
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card-img-top {
+      height: 160px; /* Smaller image height */
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .card-body {
+      padding: 1rem; /* Reduced padding */
+    }
+
+    .card-title {
+      color: var(--bmw-blue);
+      font-weight: bold;
+      font-size: 1.1rem; /* Slightly smaller font size */
+    }
+
+    .card-text {
+      color: var(--muted-text);
+      font-size: 0.9rem; /* Slightly smaller font size */
+    }
+
+    .btn-bmw {
+      background-color: var(--bmw-blue);
+      color: white;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+
+    .btn-bmw:hover {
+      background-color: #003b66;
+    }
+
+    footer {
+      background-color: rgba(30, 30, 47, 0.9); /* Slightly transparent light-bg */
+      color: var(--muted-text);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      position: relative; /* Ensure footer is above overlay */
+      z-index: 0;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      bottom: 1rem;
+      left: 1rem;
+      background-color: var(--bmw-blue);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .background-wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: url('https://svgwave.ir/api/generate?color=var(--bmw-blue)&height=100') repeat-x;
+      background-size: cover;
+      z-index: -18; /* Keep it behind other elements */
+    }
+
+    /* صفحة التفاصيل */
+    .detail-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: rgba(18, 18, 18, 0.9); /* Transparent dark-bg for detail page */
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 1; /* Ensure detail page is above overlay */
+    }
+
+    .detail-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+
+    .detail-title {
+      color: var(--bmw-blue);
+      margin-bottom: 1rem;
+    }
+
+    .detail-section {
+      margin-bottom: 1.5rem;
+    }
+
+    .detail-section h3 {
+      color: var(--bmw-red);
+      margin-bottom: 0.5rem;
+    }
+
+    .steps-list {
+      padding-right: 1.5rem;
+    }
+
+    .back-button {
+      margin-top: 2rem;
+    }
+
+    .llm-response-area {
+      background-color: rgba(42, 42, 61, 0.9); /* Transparent version of #2a2a3d */
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 1.5rem;
+      border: 1px solid #3a3a50;
+    }
+
+    .llm-response-area h4 {
+      color: var(--bmw-blue);
+      margin-bottom: 0.75rem;
+    }
+
+    .llm-response-area p {
+      color: var(--text-color);
+      white-space: pre-wrap; /* للحفاظ على تنسيق النص من LLM */
+    }
+
+    .loading-spinner {
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      border-top: 4px solid var(--bmw-blue);
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      animation: spin 1s linear infinite;
+      margin: 10px auto;
+      display: none; /* مخفي افتراضياً */
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Moving Text Banner */
+    .moving-text-banner {
+      background-color: rgba(0, 87, 146, 0.8); /* Semi-transparent BMW blue */
+      color: white;
+      padding: 0.5rem 0;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      margin-top: 1rem; /* Space below header buttons */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .moving-text-content {
+      display: inline-block;
+      padding-left: 100%; /* Start off-screen */
+      animation: marquee 20s linear infinite; /* Adjust duration for speed */
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Side Navigation Buttons */
+    .side-nav {
+      position: fixed;
+      right: 1rem; /* Position on the right side */
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px; /* Space between buttons */
+      z-index: 999; /* Ensure it's above most content */
+    }
+
+    .side-nav .btn-nav {
+      background-color: rgba(0, 87, 146, 0.8); /* Semi-transparent BMW blue */
+      color: white;
+      border: none;
+      padding: 0.75rem 0.5rem; /* Adjust padding for vertical buttons */
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none; /* Remove underline for links */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      width: 100px; /* Fixed width for consistency */
+    }
+
+    .side-nav .btn-nav:hover {
+      background-color: #003b66;
+      transform: translateX(-5px); /* Slight hover effect */
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .logo {
+        width: 60px; /* Smaller logo on mobile */
+        height: 60px;
+        top: 0.5rem;
+        left: 0.5rem;
+      }
+      .card-img-top {
+        height: 120px; /* Even smaller image height on mobile */
+      }
+      .card-body {
+        padding: 0.75rem; /* Further reduced padding on mobile */
+      }
+      .card-title {
+        font-size: 1rem;
+      }
+      .card-text {
+        font-size: 0.8rem;
+      }
+      .side-nav {
+        flex-direction: row; /* Horizontal layout on mobile */
+        width: 100%;
+        bottom: 0;
+        top: auto;
+        left: 0;
+        right: 0;
+        transform: translateY(0);
+        justify-content: space-around;
+        padding: 0.5rem;
+        background-color: rgba(30, 30, 47, 0.95); /* Solid background for mobile nav */
+        border-top: 1px solid #3a3a50;
+      }
+      .side-nav .btn-nav {
+        width: auto; /* Auto width for horizontal layout */
+        padding: 0.5rem;
+        font-size: 0.8rem;
+      }
+      .theme-toggle {
+        bottom: 4.5rem; /* Adjust position to avoid overlapping mobile nav */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="homePage">
+    <header class="position-relative">
+      <div class="logo"></div>
+      <h1>AQ///BMW Coding Platform</h1>
+      <p>online ai bmw coding Assistance</p>
+      <div class="d-flex justify-content-center mt-3">
+        <button class="btn-bmw me-2" onclick="scrollToActivations()">استعراض التفعيلات</button>
+        <button class="btn-bmw" onclick="scrollToLearningActivations()">تعلم المزيد</button>
+      </div>
+      <div class="background-wave"></div>
+    </header>
+
+    <!-- Moving Text Banner -->
+    <div class="moving-text-banner">
+      <div class="moving-text-content">
+        <p class="moving-text">
+        </p>شرح خطوات التفعيل باذكاء الصناعي للمشتركين
+ </p>
+      </div>
+    </div>
+
+    <main class="container-fluid mt-5">
+      <h2 class="text-center text-white mb-4"> </h2>
+      <div class="row" id="activationsGrid">
+        </div>
+
+      <h2 class="text-center text-white mb-4 mt-5" id="learningActivationsSection">التفعيلات الحديثة </h2>
+      <div class="row" id="learningGrid">
+        </div>
+    </main>
+
+    <footer>
+      &copy; 2025 AQ///BMW - جميع الحقوق محفوظة
+      <a href="https://api.whatsapp.com/send?phone=972528180757" target="_blank">لتواصل معنا</a>
+
+    </footer>
+
+  </div>
+
+  <div id="detailPage" style="display: none;">
+    <header class="position-relative">
+      <div class="logo"></div>
+      <h1 id="detailPageTitle">تفعيل BMW</h1>
+      <p>تفاصيل التفعيل</p>
+      <div class="background-wave"></div>
+    </header>
+
+    <div class="detail-container">
+      <img id="detailImage" class="detail-image" src="" alt="صورة التفعيل">
+      <h2 id="detailTitle" class="detail-title"></h2>
+      
+      <div class="detail-section">
+        <h3>الوصف</h3>
+        <p id="detailDescription"></p>
+      </div>
+      
+      <div class="detail-section">
+        <h3>الوحدة (ECU)</h3>
+        <p id="detailEcu"></p>
+      </div>
+      
+      <div class="detail-section">
+        <h3>خطوات التفعيل</h3>
+        <ol id="detailSteps" class="steps-list"></ol>
+      </div>
+
+      <div class="d-flex justify-content-around mt-4 mb-3">
+        <button class="btn-bmw me-2" onclick="handleSimplifiedExplanation()">شرح مبسط ✨</button>
+        <button class="btn-bmw" onclick="handleActivationMethod()">طريقة التفعيل ✨</button>
+      </div>
+
+      <div id="llmResponseArea" class="llm-response-area" style="display: none;">
+        <div class="loading-spinner" id="llmLoadingSpinner"></div>
+        <h4 id="llmResponseTitle"></h4>
+        <p id="llmResponseContent"></p>
+      </div>
+      
+      <button class="btn-bmw back-button" onclick="goBack()">العودة إلى القائمة</button>
+    </div>
+
+    <footer>
+      &copy; 2025 AQ///BMW - جميع الحقوق محفوظة
+    </footer>
+  </div>
+
+  <!-- Side Navigation Buttons -->
+  <nav class="side-nav">
+    <a href="index.html" class="btn-nav">الرئيسية</a>
+    <a href="index2.html" class="btn-nav">صفحة 2</a>
+    <a href="index3.html" class="btn-nav">صفحة 3</a>
+  </nav>
+
+  <script>
+    // بيانات التفعيلات (مضمنة مباشرة في الملف)
+    let activationsData = [
+      {
+          "title": "Trunk Closing via Interior Button",
+          "image_url": "https://storage.obdeleven.com/parse/3ecd529aff7d0ab6637e6f34563cd46f_oca_picture.jpg",
+          "year": "2017-2023"
+      },
+      {
+          "title": "Wiper Cycle Completion",
+          "image_url": "https://storage.obdeleven.com/parse/750ddf869ed2d7d450c54a3739ff3c77_oca_picture.jpg",
+          "year": "2017-2023"
+      },
+      {
+          "title": "Ignition OFF when Exiting",
+          "image_url": "https://storage.obdeleven.com/parse/9059670dcf1745502608bbd3d3d62ee7_oca_picture.jpg",
+          "year": "2017-2023"
+      },
+      {
+          "title": "Electronics OFF when Exiting",
+          "image_url": "https://storage.obdeleven.com/parse/008fdc80d60b3edeb200ef8fc36e000c_oca_picture.jpg",
+          "year": "2017-2023"
+      },
+      {
+          "title": "Comfort Operation via Door Lock",
+          "image_url": "https://storage.obdeleven.com/parse/ed76f27597313454a659aa2bb09c457b_oca_picture.jpg",
+          "year": "2017-2023"
+      },
+      {
+          "title": "Start/Stop Default Setting",
+          "image_url": "https://storage.obdeleven.com/parse/1ef7a9393adb9d197d0327c34cda0130_oca_picture.jpg",
+          "year": "2017-2023"
+      },
+      {
+          "title": "Comfort Operation via Key Fob",
+          "image_url": "https://storage.obdeleven.com/parse/e311254b0aa70298eed3d3173c86999e_oca_picture.jpg",
+          "year": "2017-2023"
+      },
+      {
+          "title": "Headlight Washer System",
+          "image_url": "https://storage.obdeleven.com/parse/f11600475ca1f96df6bc167604cee481_oca_picture.jpg",
+          "year": "2017-2023"
+      },
+      {
+          "title": "Date Display in OBC",
+          "image_url": "https://storage.obdeleven.com/parse/42a6762d2d30269f435b1b9eb1f566df_oca_picture.jpg",
+          "year": "2017-2023"
+      },
+      {
+          "title": "Comfort Mirrors",
+          "image_url": "https://storage.obdeleven.com/parse/67b7fc7999c8eb8358e958db1431c533_oca_picture.jpg",
+          "year": "2017-2023"
+      },
+      {
+          "title": "Side Mirrors Unfold Threshold",
+          "image_url": "https://storage.obdeleven.com/parse/1c846e136e99453f0610eb1f5f8b0449_oca_picture.jpg",
+          "year": "2017-2023"
+      },
+      {
+          "title": "Sunroof Delay for Comfort Opening",
+          "image_url": "https://storage.obdeleven.com/parse/ff54ed21bc373b5f667bf7d2f0da0afd_oca_picture.jpg",
+          "year": "2017-2023"
+      },
+      {
+          "title": "5 Times Comfort Turn Signals",
+          "image_url": "https://storage.obdeleven.com/parse/0e66d343c0e35fd1b560772027d43d62_oca_picture.jpg",
+          "year": "2020-2024"
+      },
+      {
+          "title": "M Logo Startup Animation",
+          "image_url": "https://storage.obdeleven.com/parse/c6084ab451c88bc8ef157eb3c16c83d8_oca_picture.jpg",
+          "year": "2020-2024"
+      },
+      {
+          "title": "M View Style Cluster",
+          "image_url": "https://storage.obdeleven.com/parse/f8030b56910a732fe26c7d2fc3a6e2a9_oca_picture.jpg",
+          "year": "2020-2024"
+      },
+      {
+          "title": "Default Driving Mode",
+          "image_url": "https://storage.obdeleven.com/parse/a29fd63d2f5ac00386477960dd2cb340_oca_picture.jpg",
+          "year": "2020-2024"
+      },
+      {
+          "title": "Horn on Secure",
+          "image_url": "https://storage.obdeleven.com/parse/ec3ea21397f01a38cfacfec8a45f86e0_oca_picture.jpg",
+          "year": "2020-2024"
+      },
+      {
+          "title": "TPMS Pressure and Temperature Display",
+          "image_url": "https://storage.obdeleven.com/parse/750b6938e0867d44071bbc032182c8cd_oca_picture.jpg",
+          "year": "2020-2024"
+      },
+      {
+          "title": "iDrive Warnings",
+          "image_url": "https://storage.obdeleven.com/parse/66b0c574cd714768234e1a7a15d798cb_oca_picture.jpg",
+          "year": "2020-2024"
+      },
+      {
+          "title": "Front Fog Lights w/ High Beams",
+          "image_url": "https://storage.obdeleven.com/parse/a06b85fa78830e85946ef8354f02a95c_oca_picture.jpg",
+          "year": "2020-2024"
+      },
+      {
+          "title": "Front Fog Lights w/ Parking Lights",
+          "image_url": "https://storage.obdeleven.com/parse/d5b143538118c4617d57ca691c004a75_oca_picture.jpg",
+          "year": "2020-2024"
+      },
+      {
+          "title": "Sport+ Mode",
+          "image_url": "https://storage.obdeleven.com/parse/c75546901cd815e8400b4c9e57c8fbda_oca_picture.jpg",
+          "year": "2020-2024"
+      },
+      {
+          "title": "X-View Display",
+          "image_url": "https://storage.obdeleven.com/parse/95a01cce6a9a4153c2482bbf90f114c9_oca_picture.jpg",
+          "year": "2020-2024"
+      },
+      {
+          "title": "Tire Pressure Display in Dashboard",
+          "image_url": "https://storage.obdeleven.com/parse/0834629027df2df27c0cadcf82a7331c_oca_picture.jpg",
+          "year": "2020-2024",
+          "source_url": "https://obdeleven.com/customizations/bmw/5-series/2020-2024/g30-lci/3"
+      },
+      {
+          "title": "Speedometer Scale Display",
+          "image_url": "https://storage.obdeleven.com/parse/7ce0f6abb9b268656316bc71ee153735_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Alpina Style Display",
+          "image_url": "https://storage.obdeleven.com/parse/c873e490b1314a701f9bf13f0d73450d_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "RLS Sensitivity",
+          "image_url": "https://storage.obdeleven.com/parse/2e9a187ad3e4975457c828d32b265d00_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Seats Heating/Cooling Memory",
+          "image_url": "https://storage.obdeleven.com/parse/3bc5584b31e29dafb299a32a307548c1_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Self Locking Time",
+          "image_url": "https://storage.obdeleven.com/parse/017f0cfdfafb6470f1d675974345b4b9_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Power Front Windows Safety",
+          "image_url": "https://storage.obdeleven.com/parse/2605b25bfe3bf986a09a12dd6ccbafe2_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Emergency Braking Lights",
+          "image_url": "https://storage.obdeleven.com/parse/b550b5057a30ee8204ffd16ec8a730e9_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "LED License Plate Lights",
+          "image_url": "https://storage.obdeleven.com/parse/be7c9596369c14bf9a35bce7a9634dff_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Assisted Driving View",
+          "image_url": "https://storage.obdeleven.com/parse/164733e1175a7eab139864fbfd94e301_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Acoustic Unlock Confirmation",
+          "image_url": "https://storage.obdeleven.com/parse/daad8bd4bd769adee75ba9f287b93766_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Automatic Lane Change",
+          "image_url": "https://storage.obdeleven.com/parse/fcd9a3378aa7aa47880fbcd7704588d5_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Bower & Wilkins Audio",
+          "image_url": "https://storage.obdeleven.com/parse/3acc77e1efe3590de5374403c43c7431_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "12V Battery Registration",
+          "image_url": "https://storage.obdeleven.com/parse/9caeb45c0000578cee2c94f4dc644983_oca_picture.jpg",
+          "year": "2020-2024"
+          
+      },
+      {
+          "title": "Engine Sound Menu",
+          "image_url": "https://storage.obdeleven.com/parse/a28d870764ebd97ea21cce79475e45cf_oca_picture.jpg",
+          "year": "2020-2024"
+          
+      },
+      {
+          "title": "Instrument Cluster Logo",
+          "image_url": "https://storage.obdeleven.com/parse/9281fcbd489723b44ffb99ea3f40e912_oca_picture.jpg",
+          "year": "2020-2024"
+          
+      },
+      {
+          "title": "Automatic Steering Wheel Heating",
+          "image_url": "https://storage.obdeleven.com/parse/fa73e81d4d099184693965f006cedf88_oca_picture.jpg",
+          "year": "2020-2024"
+          
+      },
+      {
+          "title": "Ambient Lighting Instead of Bronze",
+          "image_url": "https://storage.obdeleven.com/parse/2f4d0c62ee132453ff0bced6d80618c8_oca_picture.jpg",
+          "year": "2020-2024"
+          
+      },
+      {
+          "title": "Ambient Color Instead of Bronze",
+          "image_url": "https://storage.obdeleven.com/parse/26e104be19815c2325202b469119bac7_oca_picture.jpg",
+          "year": "2020-2024"
+          
+      },
+      {
+          "title": "Rain Closing",
+          "image_url": "https://storage.obdeleven.com/parse/36d4dc3fa8e848c0d6a2f74f26733a39_oca_picture.jpg",
+          "year": "2020-2024"
+          
+      },
+      {
+          "title": "Scandinavian DRLs",
+          "image_url": "https://storage.obdeleven.com/parse/8722d3c8cc595754444c10f2b88896c9_oca_picture.jpg",
+          "year": "2020-2024"
+          
+      },
+      {
+          "title": "M View Cluster Logo",
+          "image_url": "https://storage.obdeleven.com/parse/8b5fe8386d999b366f513f18496d7230_oca_picture.jpg",
+          "year": "2020-2024"
+          
+      },
+      {
+          "title": "Rear Seat Belts Reminder Menu",
+          "image_url": "https://storage.obdeleven.com/parse/5c692f5330b674a618b7afa3604add04_oca_picture.jpg",
+          "year": "2020-2024"
+          
+      },
+      {
+          "title": "Active Sound Design Deactivation",
+          "image_url": "https://storage.obdeleven.com/parse/159a4022221dacd99df5556dead2d5bb_oca_picture.jpg",
+          "year": "2020-2024"
+          
+      },
+      {
+          "title": "ECO PRO Coasting Mode",
+          "image_url": "https://storage.obdeleven.com/parse/40b747b342a0e62a4cb41e010cbd8b3c_oca_picture.jpg",
+          "year": "2020-2024"
+          
+      },
+      {
+          "title": "Comfort+ Mode",
+          "image_url": "https://storage.obdeleven.com/parse/c4e5ef27ac26d52bc4fc01c0be79da6e_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Brake Lights Test",
+          "image_url": "https://storage.obdeleven.com/parse/79c83239c057fff25d0ffc0290e44f83_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Reversing Lights Test",
+          "image_url": "https://storage.obdeleven.com/parse/44ecec72499c9f1c68a9bbd6381c4577_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Windscreen Washer Pump Test",
+          "image_url": "https://storage.obdeleven.com/parse/98e61f5539a545cfede9847ac8f79d3a_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Radiator Blind Opening and Closing ",
+          "image_url": "https://storage.obdeleven.com/parse/191ec48271def6879338a979daa8a382_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Steering Wheel Vibration Test",
+          "image_url": "https://storage.obdeleven.com/parse/05671bc403200ee80861cd573d2f049b_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Engine Fan Test",
+          "image_url": "https://storage.obdeleven.com/parse/695fd1be4b24dfd3b5222090d16f520a_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Horn Test",
+          "image_url": "https://storage.obdeleven.com/parse/25004774a9c5fa633d3660c65c76ece0_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Rear Fog Lights Test",
+          "image_url": "https://storage.obdeleven.com/parse/91efcacfe9b197171c786f359ca28c20_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Headlights Check",
+          "image_url": "https://storage.obdeleven.com/parse/f0169c9a66aeaa3564a54473b65c9039_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Instrument Cluster Lights Test",
+          "image_url": "https://storage.obdeleven.com/parse/06b677511a8683a43e283a03c7bb6f50_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "SOS Emergency Call System",
+          "image_url": "https://storage.obdeleven.com/parse/63c12ebda4e28525f79ced7e43280430_oca_picture.jpg",
+          "year": "2020-2024"
+         
+      },
+      {
+          "title": "Brake Fluid Reset",
+          "image_url": "https://storage.obdeleven.com/parse/b54f3a14eb0d261c6fcb72bb2ca76507_oca_picture.jpg",
+          "year": "2019"
+          
+      },
+      {
+          "title": "Engine Oil Reset",
+          "image_url": "https://storage.obdeleven.com/parse/a4928157214fe0311f38de63854ff1cd_oca_picture.jpg",
+          "year": "2019"
+          
+      },
+      {
+          "title": "Front Brake Pads Reset",
+          "image_url": "https://storage.obdeleven.com/parse/e404e4d551c5f55da70f2fbaa034f0ee_oca_picture.jpg",
+          "year": "2019"
+          
+      },
+      {
+          "title": "Rear Brake Pads Reset",
+          "image_url": "https://storage.obdeleven.com/parse/daa9554fbda4dbb659e12c6dcd6a5e86_oca_picture.jpg",
+          "year": "2019"
+          
+      },
+      {
+          "title": "Vehicle Check Reset",
+          "image_url": "https://storage.obdeleven.com/parse/b7ce4b499333c3aeb4fcaa413683e3c0_oca_picture.jpg",
+          "year": "2019"
+          
+      },
+      {
+          "title": "Sport Displays",
+          "image_url": "https://storage.obdeleven.com/parse/503c60d9d59f49ee5fe65487b9e80038_oca_picture.jpg",
+          "year": "2019"
+          
+      },
+      {
+          "title": "Video in Motion",
+          "image_url": "https://storage.obdeleven.com/parse/edf807d20d731007d9bf380b7c28e886_oca_picture.jpg",
+          "year": "2019"
+          
+      },
+      {
+          "title": "Tow Hitch Display",
+          "image_url": "https://storage.obdeleven.com/parse/4aeff12b62f3fbace5e8613285232f68_oca_picture.jpg",
+          "year": "2019"
+          
+      },
+      {
+          "title": "Comfort Operation via CA",
+          "image_url": "https://storage.obdeleven.com/parse/16ac1f179b8edc90c11b1fefbb611c33_oca_picture.jpg",
+          "year": "2019"
+          
+      },
+      {
+          "title": "Sport Displays Color",
+          "image_url": "https://storage.obdeleven.com/parse/45f535c8fd75cdbea9656621b9a3a7c9_oca_picture.jpg",
+          "year": "2019"
+          
+      },
+      {
+          "title": "Maximum Volume",
+          "image_url": "https://storage.obdeleven.com/parse/d4a8c7d87179af7df7f76789b3d6ae91_oca_picture.jpg",
+          "year": "2019"
+          
+      },
+      {
+          "title": "NBT EVO Menu Style",
+          "image_url": "https://storage.obdeleven.com/parse/265862d2f2fdcd1ae6689152080e9f8d_oca_picture.jpg",
+          "year": "2019"
+          
+      }
+    ].map((item, index) => ({
+      id: index + 1, // تعيين معرف فريد لكل تفعيل
+      title: item.title,
+      imageUrl: item.image_url,
+      year: item.year, // الاحتفاظ بسنة الموديل
+      description: `هذا التفعيل خاص بـ "${item.title}" للسيارات من موديل ${item.year}. يوفر هذا التفعيل ميزات إضافية لتحسين تجربة القيادة والأداء لسيارتك BMW.`,
+      ecu: "وحدة تحكم إلكترونية (ECU) عامة", // نص افتراضي للوحدة
+      steps: [ // خطوات افتراضية
+        `تأكد من توافق سيارتك (موديل ${item.year}) مع تفعيل "${item.title}".`,
+        "قم بتوصيل جهاز التشخيص المتوافق (E-SYS) بمنفذ OBD-II في سيارتك.",
+        "افتح تطبيق التشخيص أو البرنامج وابحث عن الوحدة ذات الصلة بهذا التفعيل (قد تختلف الوحدة حسب موديل السيارة).",
+        "ابحث عن الإعدادات المحددة لهذا التفعيل وقم بتغيير القيم المطلوبة (على سبيل المثال، من 'غير نشط' إلى 'نشط').",
+        "احفظ التغييرات وقم بإعادة تشفير الوحدة إذا لزم الأمر. تأكد من اتباع التعليمات الخاصة بجهازك لتجنب أي مشاكل.",
+        "اختبر التفعيل للتأكد من أنه يعمل بشكل صحيح."
+      ]
+    }));
+
+    // بيانات تعلم التفعيلات (مضمنة مباشرة في الملف بدلاً من الجلب الخارجي)
+    let learningActivationsData = [
+      {
+        "series": "F10/F11",
+        "ecu": "SZL",
+        "description": "تمكين مبدلات السرعة (Paddle Shifters) لعجلة القيادة، وهو مفيد بشكل خاص للسيارات التي تم تحديثها بهذه الميزة.",
+        "steps": [
+          "1. الدخول إلى وحدة SZL (وحدة مركز التوجيه).",
+          "2. البحث عن المعلمة 'Lenkrad_Schaltpaddles'.",
+          "3. تغيير القيمة إلى 'aktiv' (نشط).",
+          "4. حفظ التغييرات وتشفير الوحدة."
+        ],
+        "title": "تمكين مبدلات السرعة (Paddle Shifters)",
+        "image_url": "https://storage.obdeleven.com/parse/750ddf869ed2d7d450c54a3739ff3c77_oca_picture.jpg"
+      },
+      {
+        "series": "G-Series",
+        "ecu": "BDC_BODY",
+        "description": "إغلاق صندوق السيارة (الشنطة) باستخدام الزر الداخلي في مقصورة الركاب، مما يوفر راحة إضافية.",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY (وحدة تحكم الجسم).",
+          "2. البحث عن الوظيفة المتعلقة بإغلاق الصندوق من الداخل.",
+          "3. تفعيل هذه الوظيفة.",
+          "4. حفظ التغييرات."
+        ],
+        "title": "إغلاق صندوق السيارة بالزر الداخلي",
+        "image_url": "https://storage.obdeleven.com/parse/3ecd529aff7d0ab6637e6f34563cd46f_oca_picture.jpg"
+      },
+      {
+        "series": "F30/F32",
+        "ecu": "HU_NBT",
+        "description": "تفعيل عرض السرعة الرقمية في لوحة العدادات للحصول على قراءة دقيقة للسرعة.",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT (وحدة المعلومات والترفيه).",
+          "2. البحث عن خيار عرض السرعة الرقمية.",
+          "3. تفعيله وحفظ الإعدادات."
+        ],
+        "title": "عرض السرعة الرقمية في لوحة العدادات",
+        "image_url": "https://storage.obdeleven.com/parse/7ce0f6abb9b268656316bc71ee153735_oca_picture.jpg"
+      },
+      {
+        "series": "G05/G07",
+        "ecu": "KOMBI",
+        "description": "تغيير رسوم بدء التشغيل في لوحة العدادات إلى شعار M Performance.",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI (لوحة العدادات).",
+          "2. البحث عن إعداد رسوم بدء التشغيل.",
+          "3. تحديد شعار M Performance.",
+          "4. حفظ التغييرات وإعادة تشغيل iDrive."
+        ],
+        "title": "رسوم بدء تشغيل شعار M",
+        "image_url": "https://storage.obdeleven.com/parse/c6084ab451c88bc8ef157eb3c16c83d8_oca_picture.jpg"
+      },
+      {
+        "series": "F-Series",
+        "ecu": "FEM_BODY",
+        "description": "تفعيل إغلاق النوافذ وفتحة السقف تلقائيًا عند استشعار المطر.",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن 'Rain Closing' أو ما يعادلها.",
+          "3. تفعيل الوظيفة."
+        ],
+        "title": "إغلاق النوافذ مع المطر",
+        "image_url": "https://storage.obdeleven.com/parse/36d4dc3fa8e848c0d6a2f74f26733a39_oca_picture.jpg"
+      },
+      {
+        "series": "All",
+        "ecu": "غير محدد",
+        "description": "معلومات عامة حول كيفية تحديث خرائط نظام الملاحة في سيارات BMW.",
+        "steps": [
+          "1. قم بتنزيل ملفات الخرائط من مصدر موثوق.",
+          "2. انقل الملفات إلى محرك أقراص USB مهيأ بشكل صحيح.",
+          "3. أدخل محرك USB في منفذ USB بالسيارة.",
+          "4. اتبع التعليمات التي تظهر على شاشة iDrive لإكمال التحديث."
+        ],
+        "title": "تحديث خرائط الملاحة",
+        "image_url": "https://placehold.co/200x200/005792/ffffff?text=خرائط+الملاحة"
+      }
+    ].map((item, index) => {
+      let stepsContent = [];
+      if (item.steps && Array.isArray(item.steps)) {
+        stepsContent = item.steps;
+      } else if (item.content) {
+        stepsContent = item.content.split('\n').filter(step => step.trim() !== '');
+      } else if (item.description) {
+        stepsContent = item.description.split('. ').filter(step => step.trim() !== '');
+      } else {
+        stepsContent = ["لا تتوفر خطوات محددة لهذا البند التعليمي."];
+      }
+
+      return {
+        id: `learn-${index + 1}`,
+        title: item.title || "عنوان غير متوفر",
+        description: item.description || "لا يوجد وصف متاح لهذا التفعيل التعليمي.",
+        imageUrl: item.image_url || 'https://placehold.co/200x200/cccccc/000000?text=صورة+غير+متوفرة',
+        steps: stepsContent
+      };
+    });
+
+    let currentActivation = null; // لتخزين التفعيل الحالي المعروض في صفحة التفاصيل
+
+    // عرض بطاقات التفعيلات في الصفحة الرئيسية
+    function generateCards() {
+      const grid = document.getElementById('activationsGrid');
+      grid.innerHTML = ''; // مسح البطاقات الموجودة قبل الإضافة
+      
+      if (activationsData.length === 0) {
+        grid.innerHTML = '<p class="text-center text-muted">لا توجد تفعيلات لعرضها حالياً.</p>';
+        return;
+      }
+
+      // Use col-md-3 for smaller cards (4 cards per row on desktop)
+      activationsData.forEach(item => {
+        const col = document.createElement('div');
+        col.className = 'col-md-3 col-sm-6 mb-4'; /* Added col-sm-6 for 2 cards per row on small screens */
+
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        const cardImg = document.createElement('img');
+        cardImg.className = 'card-img-top';
+        cardImg.src = item.imageUrl;
+        cardImg.alt = item.title;
+        cardImg.onerror = () => {
+          cardImg.src = 'https://placehold.co/160x120/cccccc/000000?text=صورة+غير+متوفرة'; /* Smaller placeholder */
+        };
+        card.appendChild(cardImg);
+
+        const cardBody = document.createElement('div');
+        cardBody.className = 'card-body';
+
+        const title = document.createElement('h5');
+        title.className = 'card-title';
+        title.textContent = item.title;
+        cardBody.appendChild(title);
+
+        const btn = document.createElement('button');
+        btn.className = 'btn-bmw';
+        btn.textContent = 'عرض التفاصيل';
+        btn.onclick = (e) => {
+          e.stopPropagation();
+          showDetail(item.id);
+        };
+        cardBody.appendChild(btn);
+
+        card.appendChild(cardBody);
+        col.appendChild(card);
+        grid.appendChild(col);
+      });
+    }
+
+    // عرض بطاقات تعلم التفعيلات في الصفحة الرئيسية
+    function generateLearningCards() {
+      const grid = document.getElementById('learningGrid');
+      grid.innerHTML = ''; // مسح البطاقات الموجودة قبل الإضافة
+      
+      if (learningActivationsData.length === 0) {
+        grid.innerHTML = '<p class="text-center text-muted">لا توجد مواد تعليمية لعرضها حالياً.</p>';
+        return;
+      }
+
+      // Use col-md-3 for smaller cards (4 cards per row on desktop)
+      learningActivationsData.forEach(item => {
+        const col = document.createElement('div');
+        col.className = 'col-md-3 col-sm-6 mb-4'; /* Added col-sm-6 for 2 cards per row on small screens */
+
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        const cardImg = document.createElement('img');
+        cardImg.className = 'card-img-top';
+        cardImg.src = item.imageUrl;
+        cardImg.alt = item.title;
+        cardImg.onerror = () => {
+          cardImg.src = 'https://placehold.co/160x120/cccccc/000000?text=صورة+غير+متوفرة'; /* Smaller placeholder */
+        };
+        card.appendChild(cardImg);
+
+        const cardBody = document.createElement('div');
+        cardBody.className = 'card-body';
+
+        const title = document.createElement('h5');
+        title.className = 'card-title';
+        title.textContent = item.title;
+        cardBody.appendChild(title);
+
+        const description = document.createElement('p');
+        description.className = 'card-text';
+        description.textContent = item.description;
+        cardBody.appendChild(description);
+
+        card.appendChild(cardBody);
+        col.appendChild(card);
+        grid.appendChild(col);
+      });
+    }
+
+    // عرض صفحة التفاصيل (لتفعيلات BMW فقط)
+    function showDetail(id) {
+      const item = activationsData.find(act => act.id === id);
+      if (!item) {
+        console.error('لم يتم العثور على التفعيل بالمعرف:', id);
+        return;
+      }
+      currentActivation = item; // تخزين التفعيل الحالي
+      
+      document.getElementById('homePage').style.display = 'none';
+      document.getElementById('detailPage').style.display = 'block';
+      
+      document.getElementById('detailImage').src = item.imageUrl;
+      document.getElementById('detailImage').alt = item.title; // تحديث النص البديل للصورة
+      document.getElementById('detailTitle').textContent = item.title;
+      document.getElementById('detailDescription').textContent = item.description;
+      document.getElementById('detailEcu').textContent = item.ecu;
+      
+      const stepsList = document.getElementById('detailSteps');
+      stepsList.innerHTML = '';
+
+      // البحث عن خطوات مطابقة من learningActivationsData
+      const matchingLearningItem = learningActivationsData.find(learnItem => 
+        learnItem.title && item.title && learnItem.title.toLowerCase() === item.title.toLowerCase()
+      );
+
+      let stepsToDisplay = item.steps; // الخطوات الافتراضية (الهاردكودد)
+
+      if (matchingLearningItem && matchingLearningItem.steps && matchingLearningItem.steps.length > 0) {
+        stepsToDisplay = matchingLearningItem.steps; // استخدام الخطوات من البيانات التعليمية إذا وجدت
+      } else if (matchingLearningItem && matchingLearningItem.description) {
+        // إذا لم توجد خطوات محددة ولكن يوجد وصف، نقوم بتقسيم الوصف كخطوات
+        const descSteps = matchingLearningItem.description.split('. ').filter(s => s.trim() !== '');
+        if (descSteps.length > 0) {
+          stepsToDisplay = descSteps;
+        } else {
+          stepsToDisplay = ["لا تتوفر خطوات محددة لهذا التفعيل التعليمي، ولكن هذا هو وصفه العام: " + matchingLearningItem.description];
+        }
+      }
+
+      stepsToDisplay.forEach(step => {
+        const li = document.createElement('li');
+        li.textContent = step;
+        stepsList.appendChild(li);
+      });
+      
+      // إخفاء منطقة استجابة LLM عند عرض تفاصيل جديدة
+      document.getElementById('llmResponseArea').style.display = 'none';
+      document.getElementById('llmResponseContent').textContent = '';
+      document.getElementById('llmResponseTitle').textContent = '';
+      
+      // التمرير لأعلى الصفحة عند عرض التفاصيل
+      window.scrollTo(0, 0);
+    }
+
+    // العودة إلى الصفحة الرئيسية
+    function goBack() {
+      document.getElementById('homePage').style.display = 'block';
+      document.getElementById('detailPage').style.display = 'none';
+      currentActivation = null; // مسح التفعيل الحالي
+      // التمرير لأعلى الصفحة عند العودة
+      window.scrollTo(0, 0);
+    }
+
+
+    // دالة للتمرير إلى قسم التفعيلات
+    function scrollToActivations() {
+      document.getElementById('activationsGrid').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // دالة للتمرير إلى قسم تعلم التفعيلات
+    function scrollToLearningActivations() {
+      document.getElementById('learningActivationsSection').scrollIntoView({ behavior: 'smooth' });
+    }
+
+
+    // إظهار وإخفاء مؤشر التحميل ومنطقة الاستجابة
+    function showLoadingSpinner() {
+      document.getElementById('llmResponseArea').style.display = 'block';
+      document.getElementById('llmLoadingSpinner').style.display = 'block';
+      document.getElementById('llmResponseTitle').textContent = '';
+      document.getElementById('llmResponseContent').textContent = '';
+    }
+
+    function hideLoadingSpinner() {
+      document.getElementById('llmLoadingSpinner').style.display = 'none';
+    }
+
+    function displayLLMResponse(title, content) {
+      document.getElementById('llmResponseTitle').textContent = title;
+      document.getElementById('llmResponseContent').textContent = content;
+      document.getElementById('llmResponseArea').style.display = 'block';
+    }
+
+    // دالة عامة لاستدعاء Gemini API
+    async function callGeminiAPI(prompt, title) {
+      showLoadingSpinner();
+      try {
+        let chatHistory = [];
+        chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+        const payload = { contents: chatHistory };
+        const apiKey = "AIzaSyAoXHtK_NHPQkuJlvFR6UNzHL-aZ2hzutk"; // Canvas will provide this at runtime
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+        
+        const response = await fetch(apiUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        
+        const result = await response.json();
+
+        if (result.candidates && result.candidates.length > 0 &&
+            result.candidates[0].content && result.candidates[0].content.parts &&
+            result.candidates[0].content.parts.length > 0) {
+          const text = result.candidates[0].content.parts[0].text;
+          displayLLMResponse(title, text);
+        } else {
+          displayLLMResponse(title, 'عذرًا، لم أتمكن من الحصول على استجابة. يرجى المحاولة مرة أخرى.');
+          console.error('هيكل استجابة Gemini API غير متوقع:', result);
+        }
+      } catch (error) {
+        displayLLMResponse(title, 'حدث خطأ أثناء الاتصال بـ Gemini API. يرجى التحقق من اتصالك بالإنترنت والمحاولة مرة أخرى.');
+        console.error('خطأ في استدعاء Gemini API:', error);
+      } finally {
+        hideLoadingSpinner();
+      }
+    }
+
+    // التعامل مع طلب الشرح المبسط
+    async function handleSimplifiedExplanation() {
+      if (!currentActivation) {
+        displayLLMResponse('خطأ', 'يرجى تحديد تفعيل أولاً.');
+        return;
+      }
+      const prompt = `اشرح تفعيل BMW التالي بطريقة مبسطة ومختصرة: "${currentActivation.title}". هذا التفعيل مخصص لسيارات BMW موديل ${currentActivation.year}.`;
+      await callGeminiAPI(prompt, 'شرح مبسط للتفعيل');
+    }
+
+    // التعامل مع طلب "طريقة التفعيل" باستخدام Gemini API
+    async function handleActivationMethod() {
+      if (!currentActivation) {
+        displayLLMResponse('خطأ', 'يرجى تحديد تفعيل أولاً.');
+        return;
+      }
+
+      const matchingLearningItem = learningActivationsData.find(learnItem => 
+        learnItem.title && currentActivation.title && learnItem.title.toLowerCase() === currentActivation.title.toLowerCase()
+      );
+
+      let prompt;
+      if (matchingLearningItem && matchingLearningItem.description) {
+        prompt = `بناءً على الوصف التالي لتفعيل BMW: "${matchingLearningItem.description}"، يرجى تقديم خطوات تفعيل مفصلة وواضحة لهذا التفعيل. ركز على الخطوات العملية التي يمكن للمستخدم اتباعها.`;
+      } else {
+        prompt = `يرجى تقديم خطوات تفعيل مفصلة وواضحة لتفعيل BMW بعنوان "${currentActivation.title}" (موديل ${currentActivation.year}).`;
+      }
+      
+      await callGeminiAPI(prompt, 'طريقة التفعيل');
+    }
+
+    // تهيئة الصفحة عند التحميل: جلب البيانات ثم إنشاء البطاقات
+    document.addEventListener('DOMContentLoaded', async function() {
+      generateCards(); // إنشاء بطاقات التفعيلات الثابتة
+      generateLearningCards(); // إنشاء بطاقات تعلم التفعيلات (البيانات مضمنة)
+      startBackgroundRotation(); // بدء تدوير الخلفيات
+    });
+
+    // --- وظائف الخلفية الديناميكية ---
+    const backgroundImages = [
+      'https://imagedelivery.net/c2SKP8Bk0ZKw6UDgeeIlbw/55b954f0-c771-45c2-6519-dbe3ec1ceb00/public',
+      'https://wallpapers.com/images/high/bmw-m8-4k-0iajmo8ncu3jaog8.webp',
+      'https://wallpapers.com/images/high/bmw-m4-cs-racetrack-4k-wallpaper-4z115206x15p7f7i.webp',
+      'https://wallpapers.com/images/high/bmw-m4-coupe-4k-wallpaper-l7q2j5d86214l1j2.webp',
+      'https://wallpapers.com/images/high/bmw-m4-gts-4k-wallpaper-c98x5e85x167b7p3.webp',
+      'https://wallpapers.com/images/high/bmw-m2-coupe-4k-wallpaper-h52q330d0z595844.webp'
+    ];
+    let currentBackgroundIndex = 1;
+
+    function changeBackground() {
+      document.body.style.backgroundImage = `url('${backgroundImages[currentBackgroundIndex]}')`;
+      currentBackgroundIndex = (currentBackgroundIndex + 1) % backgroundImages.length;
+    }
+
+    function startBackgroundRotation() {
+      changeBackground(); // Set initial background
+      setInterval(changeBackground, 10000); // Change every 10 seconds
+    }
+  </script>
+
+</body>
+</html>

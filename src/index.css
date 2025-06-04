@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Cairo', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  direction: rtl;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* هذه الخلفية يمكن أن تظهر إذا كانت عناصر React شفافة تمامًا */
+  background-color: #0f4493;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* تخصيص شريط التمرير */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.8);
+}
+
+/* تأثيرات إضافية */
+.hover-glow:hover {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* تأثيرات الانتقال */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* تخصيص الخطوط */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  /* الخلفية هنا شفافة للسماح للخلفية الديناميكية في React بالظهور */
+  background-color: transparent;
+  background-image: none;
+  background-attachment: fixed;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* تأثيرات الأزرار */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* تأثيرات البطاقات */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* تأثير الخلفية المتحركة (هذا لا يؤثر على صور الخلفية الديناميكية التي أضفتها في React) */
+.animated-bg {
+  background: linear-gradient(-45deg, #0f172a, #1e3a8a, #1e40af, #3b82f6);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/*
+   إصلاح مشكلة لون خيارات القوائم المنسدلة:
+   المتصفحات (وخاصة Chrome) قد تطبق أنماطًا افتراضية على عناصر <option>
+   داخل القوائم المنسدلة (select) والتي قد تتداخل مع أنماط Tailwind
+   وتجعل النص أبيض على خلفية بيضاء.
+   هذه الأنماط تجبر لون الخلفية والنص لخيارات القائمة المنسدلة
+   لتكون داكنة وقابلة للقراءة.
+*/
+.dark-dropdown-options {
+  /* تعيين لون خلفية لعنصر select نفسه عندما يكون مفتوحًا */
+  /* هذا يضمن أن الخلفية تكون داكنة بدلاً من بيضاء تمامًا */
+  background-color: #1a202c; /* لون داكن للخلفية */
+  color: #e2e8f0; /* لون نص فاتح */
+}
+
+/* الأنماط الخاصة بعناصر <option> داخل القائمة المنسدلة */
+.dark-dropdown-options option {
+  background-color: #1a202c !important; /* خلفية داكنة للخيارات الفردية */
+  color: #e2e8f0 !important; /* لون نص فاتح للخيارات */
+  /* استخدام !important للتأكد من تجاوز الأنماط الافتراضية للمتصفح أو أي أنماط أخرى */
+}
+
+/* يمكن إضافة نمط للخيار المحدد (hover) */
+.dark-dropdown-options option:hover {
+  background-color: #2d3748 !important; /* لون أغمق عند المرور */
+  color: #ffffff !important; /* نص أبيض عند المرور */
+}

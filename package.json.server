@@ -1,0 +1,13 @@
+{
+  "name": "react-aq-bimmer-server",
+  "version": "1.0.0",
+  "description": "خادم بسيط لتشغيل موقع React AQ///bimmer محلياً",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "compression": "^1.7.4"
+  }
+}
