@@ -1,458 +1,953 @@
 [
   {
     "model": "3-series",
-    "year": "2019-present",
+    "year": "2019-2025",
     "generation": "g20",
     "activations": [
       {
+        "id": 1,
         "title": "تفعيل وضع الرياضة الفردي",
-        "description": "تفعيل إمكانية تخصيص وضع القيادة الرياضية حسب تفضيلاتك الشخصية",
+        "description": "تفعيل إمكانية تخصيص وضع القيادة الرياضية حسب تفضيلاتك الشخصية.",
         "category": "وضع القيادة",
-        "price": "150"
+        "price": "150",
+        "ecu": "ICM",
+        "steps": [
+          "1. الدخول إلى وحدة ICM (وحدة إدارة الهيكل المتكاملة).",
+          "2. البحث عن معلمة وضع القيادة الرياضية الفردي.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 2,
         "title": "تفعيل إغلاق النوافذ من المفتاح",
-        "description": "إمكانية إغلاق جميع النوافذ عن طريق الضغط المطول على زر القفل في المفتاح",
+        "description": "إمكانية إغلاق جميع النوافذ عن طريق الضغط المطول على زر القفل في المفتاح.",
         "category": "الراحة",
-        "price": "100"
+        "price": "100",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن وظيفة إغلاق النوافذ بالمفتاح.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 3,
         "title": "تفعيل فتح صندوق الأمتعة من المفتاح",
-        "description": "إمكانية فتح صندوق الأمتعة عن طريق الضغط المزدوج على زر فتح الأبواب",
+        "description": "إمكانية فتح صندوق الأمتعة عن طريق الضغط المزدوج على زر فتح الأبواب.",
         "category": "الراحة",
-        "price": "100"
+        "price": "100",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن وظيفة فتح الصندوق بالمفتاح.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 4,
         "title": "تفعيل وظيفة الترحيب الضوئي",
-        "description": "إضاءة المصابيح بنمط خاص عند فتح السيارة",
+        "description": "إضاءة المصابيح بنمط خاص عند فتح السيارة.",
         "category": "الإضاءة",
-        "price": "120"
+        "price": "120",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات الترحيب الضوئي.",
+          "3. تفعيل النمط المطلوب وحفظ التغييرات."
+        ]
       },
       {
+        "id": 5,
         "title": "تفعيل عرض معلومات المحرك",
-        "description": "عرض معلومات إضافية عن المحرك في شاشة العدادات",
+        "description": "عرض معلومات إضافية عن المحرك في شاشة العدادات.",
         "category": "العرض",
-        "price": "130"
+        "price": "130",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI (لوحة العدادات).",
+          "2. البحث عن خيار عرض معلومات المحرك.",
+          "3. تفعيله وحفظ الإعدادات."
+        ]
       },
       {
+        "id": 6,
         "title": "5 Times Comfort Turn Signals",
         "description": "تفعيل وميض إشارة الانعطاف 5 مرات بضغطة واحدة.",
         "category": "الإضاءة",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/0e66d343c0e35fd1b560772027d43d62_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/0e66d343c0e35fd1b560772027d43d62_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن معلمة 'Blinkzyklen_Komfortblinken'.",
+          "3. تغيير القيمة إلى '5'.",
+          "4. حفظ التغييرات وتشفير الوحدة."
+        ]
       },
       {
+        "id": 7,
         "title": "M Logo Startup Animation",
         "description": "تغيير رسوم بدء التشغيل على شاشة iDrive إلى شعار M.",
         "category": "العرض",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/c6084ab451c88bc8ef157eb3c16c83d8_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c6084ab451c88bc8ef157eb3c16c83d8_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT (وحدة المعلومات والترفيه).",
+          "2. البحث عن إعداد رسوم بدء التشغيل.",
+          "3. تحديد شعار M Performance.",
+          "4. حفظ التغييرات وإعادة تشغيل iDrive."
+        ]
       },
       {
+        "id": 8,
         "title": "M View Style Cluster",
         "description": "تفعيل نمط عرض M في لوحة العدادات.",
         "category": "العرض",
         "price": "120",
-        "image_url": "https://storage.obdeleven.com/parse/f8030b56910a732fe26c7d2fc3a6e2a9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/f8030b56910a732fe26c7d2fc3a6e2a9_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI (لوحة العدادات).",
+          "2. البحث عن إعداد نمط العرض.",
+          "3. تحديد نمط M View.",
+          "4. حفظ التغييرات وإعادة تشغيل iDrive."
+        ]
       },
       {
+        "id": 9,
         "title": "Default Driving Mode",
         "description": "تعيين وضع القيادة الافتراضي عند بدء تشغيل السيارة.",
         "category": "وضع القيادة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/a29fd63d2f5ac00386477960dd2cb340_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/a29fd63d2f5ac00386477960dd2cb340_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME (وحدة التحكم بالمحرك).",
+          "2. البحث عن إعداد وضع القيادة الافتراضي.",
+          "3. ضبط الوضع المطلوب (مثل Sport أو Comfort).",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 10,
         "title": "Horn on Secure",
         "description": "تفعيل صوت البوق عند قفل السيارة.",
         "category": "الراحة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/ec3ea21397f01a38cfacfec8a45f86e0_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/ec3ea21397f01a38cfacfec8a45f86e0_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن معلمة 'Akustische_Verriegelungsbestaetigung'.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 11,
         "title": "TPMS Pressure and Temperature Display",
         "description": "عرض ضغط ودرجة حرارة الإطارات في شاشة النظام.",
         "category": "العرض",
         "price": "110",
-        "image_url": "https://storage.obdeleven.com/parse/750b6938e0867d44071bbc032182c8cd_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/750b6938e0867d44071bbc032182c8cd_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات TPMS.",
+          "3. تفعيل خيار عرض الضغط ودرجة الحرارة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 12,
         "title": "iDrive Warnings",
         "description": "تخصيص أو إيقاف تحذيرات iDrive.",
         "category": "العرض",
         "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/66b0c574cd714768234e1a7a15d798cb_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/66b0c574cd714768234e1a7a15d798cb_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات التحذيرات.",
+          "3. تخصيص التحذيرات المطلوبة أو إلغاء تنشيطها.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 13,
         "title": "Front Fog Lights w/ High Beams",
         "description": "تفعيل المصابيح الأمامية للضباب مع الأضواء العالية.",
         "category": "الإضاءة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/a06b85fa78830e85946ef8354f02a95c_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/a06b85fa78830e85946ef8354f02a95c_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات مصابيح الضباب.",
+          "3. تفعيل العمل مع الأضواء العالية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 14,
         "title": "Front Fog Lights w/ Parking Lights",
         "description": "تفعيل المصابيح الأمامية للضباب مع أضواء الوقوف.",
         "category": "الإضاءة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/d5b143538118c4617d57ca691c004a75_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/d5b143538118c4617d57ca691c004a75_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات مصابيح الضباب.",
+          "3. تفعيل العمل مع أضواء الوقوف.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 15,
         "title": "Sport+ Mode",
         "description": "تفعيل وضع Sport+ للقيادة الرياضية المعززة.",
         "category": "وضع القيادة",
         "price": "150",
-        "image_url": "https://storage.obdeleven.com/parse/c75546901cd815e8400b4c9e57c8fbda_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c75546901cd815e8400b4c9e57c8fbda_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME (وحدة التحكم بالمحرك).",
+          "2. البحث عن إعدادات أوضاع القيادة.",
+          "3. تفعيل وضع Sport+.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 16,
         "title": "X-View Display",
         "description": "تفعيل عرض X-View في شاشة العدادات (معلومات الطرق الوعرة).",
         "category": "العرض",
         "price": "140",
-        "image_url": "https://storage.obdeleven.com/parse/95a01cce6a9a4153c2482bbf90f114c9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/95a01cce6a9a4153c2482bbf90f114c9_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات العرض.",
+          "3. تفعيل خيار X-View.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 17,
         "title": "Tire Pressure Display in Dashboard",
         "description": "عرض ضغط الإطارات مباشرة في لوحة العدادات.",
         "category": "العرض",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/0834629027df2df27c0cadcf82a7331c_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/0834629027df2df27c0cadcf82a7331c_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات عرض ضغط الإطارات.",
+          "3. تفعيل العرض في لوحة العدادات.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 18,
         "title": "Speedometer Scale Display",
         "description": "عرض مقياس السرعة بتصميمات إضافية.",
         "category": "العرض",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/7ce0f6abb9b268656316bc71ee153735_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/7ce0f6abb9b268656316bc71ee153735_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات مقياس السرعة.",
+          "3. تفعيل التصميمات الإضافية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 19,
         "title": "Alpina Style Display",
         "description": "تفعيل نمط عرض Alpina في لوحة العدادات.",
         "category": "العرض",
         "price": "160",
-        "image_url": "https://storage.obdeleven.com/parse/c873e490b1314a701f9bf13f0d73450d_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c873e490b1314a701f9bf13f0d73450d_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن نمط العرض.",
+          "3. تفعيل نمط Alpina.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 20,
         "title": "RLS Sensitivity",
         "description": "تعديل حساسية مستشعر المطر والضوء.",
         "category": "الإضاءة",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/2e9a187ad3e4975457c828d32b265d00_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/2e9a187ad3e4975457c828d32b265d00_oca_picture.jpg",
+        "ecu": "FRM",
+        "steps": [
+          "1. الدخول إلى وحدة FRM (وحدة القدم).",
+          "2. البحث عن إعدادات حساسية مستشعر المطر/الضوء (RLS).",
+          "3. تعديل القيمة إلى المستوى المطلوب.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 21,
         "title": "Seats Heating/Cooling Memory",
         "description": "تفعيل ذاكرة تسخين/تبريد المقاعد.",
         "category": "الراحة",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/3bc5584b31e29dafb299a32a307548c1_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/3bc5584b31e29dafb299a32a307548c1_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات ذاكرة المقاعد.",
+          "3. تفعيل وظيفة ذاكرة التسخين/التبريد.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 22,
         "title": "Self Locking Time",
         "description": "تعديل وقت القفل التلقائي للأبواب.",
         "category": "الراحة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/017f0cfdfafb6470f1d675974345b4b9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/017f0cfdfafb6470f1d675974345b4b9_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات القفل التلقائي.",
+          "3. تعديل الوقت إلى القيمة المطلوبة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 23,
         "title": "Power Front Windows Safety",
         "description": "تعديل حساسية نظام أمان النوافذ الأمامية.",
         "category": "الراحة",
         "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/2605b25bfe3bf986a09a12dd6ccbafe2_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/2605b25bfe3bf986a09a12dd6ccbafe2_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات أمان النوافذ.",
+          "3. تعديل مستوى الحساسية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 24,
         "title": "Emergency Braking Lights",
         "description": "تفعيل أضواء الفرامل الوامضة في حالات الفرملة الطارئة.",
         "category": "الإضاءة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/b550b5057a30ee8204ffd16ec8a730e9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/b550b5057a30ee8204ffd16ec8a730e9_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات أضواء الفرامل.",
+          "3. تفعيل وظيفة الوميض عند الفرملة الطارئة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 25,
         "title": "LED License Plate Lights",
         "description": "تعديل إعدادات أضواء لوحة الترخيص LED.",
         "category": "الإضاءة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/be7c9596369c14bf9a35bce7a9634dff_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/be7c9596369c14bf9a35bce7a9634dff_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات أضواء لوحة الترخيص.",
+          "3. تعديل الإعدادات للتعامل مع أضواء LED.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 26,
         "title": "Assisted Driving View",
         "description": "تفعيل عرض مساعدة القيادة في الشاشة.",
         "category": "مساعدة السائق",
         "price": "130",
-        "image_url": "https://storage.obdeleven.com/parse/164733e1175a7eab139864fbfd94e301_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/164733e1175a7eab139864fbfd94e301_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات عرض مساعدة القيادة.",
+          "3. تفعيل العرض.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 27,
         "title": "Acoustic Unlock Confirmation",
         "description": "تفعيل صوت تأكيد فتح الأبواب.",
         "category": "الراحة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/daad8bd4bd769adee75ba9f287b93766_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/daad8bd4bd769adee75ba9f287b93766_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن معلمة 'Akustische_Entriegelungsbestaetigung'.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 28,
         "title": "Automatic Lane Change",
         "description": "تفعيل وظيفة تغيير المسار التلقائي.",
         "category": "مساعدة السائق",
         "price": "180",
-        "image_url": "https://storage.obdeleven.com/parse/fcd9a3378aa7aa47880fbcd7704588d5_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/fcd9a3378aa7aa47880fbcd7704588d5_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات مساعدة السائق.",
+          "3. تفعيل وظيفة تغيير المسار التلقائي (يتطلب تجهيزات مساعدة السائق المتقدمة).",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 29,
         "title": "Bower & Wilkins Audio",
         "description": "تفعيل إعدادات صوت Bower & Wilkins (إذا كان النظام متوفرًا).",
         "category": "الصوت",
         "price": "200",
-        "image_url": "https://storage.obdeleven.com/parse/3acc77e1efe3590de5374403c43c7431_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/3acc77e1efe3590de5374403c43c7431_oca_picture.jpg",
+        "ecu": "RAM",
+        "steps": [
+          "1. الدخول إلى وحدة RAM (وحدة الصوت).",
+          "2. البحث عن إعدادات نظام الصوت.",
+          "3. تفعيل أو ضبط إعدادات Bower & Wilkins.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 30,
         "title": "12V Battery Registration",
         "description": "تسجيل بطارية 12 فولت جديدة.",
         "category": "الصيانة",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/9caeb45c0000578cee2c94f4dc644983_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/9caeb45c0000578cee2c94f4dc644983_oca_picture.jpg",
+        "ecu": "JBBF",
+        "steps": [
+          "1. الدخول إلى وحدة JBBF (صندوق التوصيل الأمامي).",
+          "2. تنفيذ وظيفة تسجيل البطارية الجديدة.",
+          "3. تأكيد التسجيل."
+        ]
       },
       {
+        "id": 31,
         "title": "Engine Sound Menu",
         "description": "تفعيل قائمة إعدادات صوت المحرك.",
         "category": "الصوت",
         "price": "110",
-        "image_url": "https://storage.obdeleven.com/parse/a28d870764ebd97ea21cce79475e45cf_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/a28d870764ebd97ea21cce79475e45cf_oca_picture.jpg",
+        "ecu": "ASD",
+        "steps": [
+          "1. الدخول إلى وحدة ASD (تصميم الصوت النشط).",
+          "2. البحث عن إعدادات قائمة صوت المحرك.",
+          "3. تفعيل القائمة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 32,
         "title": "Instrument Cluster Logo",
         "description": "تغيير شعار لوحة العدادات.",
         "category": "العرض",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/9281fcbd489723b44ffb99ea3f40e912_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/9281fcbd489723b44ffb99ea3f40e912_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعداد شعار لوحة العدادات.",
+          "3. تحديد الشعار المطلوب.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 33,
         "title": "Automatic Steering Wheel Heating",
         "description": "تفعيل التسخين التلقائي لعجلة القيادة.",
         "category": "الراحة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/fa73e81d4d099184693965f006cedf88_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/fa73e81d4d099184693965f006cedf88_oca_picture.jpg",
+        "ecu": "SZL",
+        "steps": [
+          "1. الدخول إلى وحدة SZL (مركز تبديل التوجيه).",
+          "2. البحث عن إعدادات تدفئة عجلة القيادة.",
+          "3. تفعيل التسخين التلقائي.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 34,
         "title": "Ambient Lighting Instead of Bronze",
         "description": "تغيير لون الإضاءة المحيطة من البرونزي.",
         "category": "الإضاءة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/2f4d0c62ee132453ff0bced6d80618c8_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/2f4d0c62ee132453ff0bced6d80618c8_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن إعدادات الإضاءة المحيطة.",
+          "3. تغيير اللون الافتراضي من البرونزي.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 35,
         "title": "Ambient Color Instead of Bronze",
         "description": "تغيير لون الإضاءة المحيطة من البرونزي.",
         "category": "الإضاءة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/26e104be19815c2325202b469119bac7_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/26e104be19815c2325202b469119bac7_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن إعدادات الإضاءة المحيطة.",
+          "3. تغيير اللون الافتراضي من البرونزي.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 36,
         "title": "Rain Closing",
         "description": "إغلاق النوافذ وفتحة السقف تلقائيًا عند استشعار المطر.",
         "category": "الراحة",
         "price": "120",
-        "image_url": "https://storage.obdeleven.com/parse/36d4dc3fa8e848c0d6a2f74f26733a39_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/36d4dc3fa8e848c0d6a2f74f26733a39_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن معلمة 'Regenschliessen'.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 37,
         "title": "Scandinavian DRLs",
         "description": "تفعيل أضواء النهار الاسكندنافية.",
         "category": "الإضاءة",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/8722d3c8cc595754444c10f2b88896c9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/8722d3c8cc595754444c10f2b88896c9_oca_picture.jpg",
+        "ecu": "FRM",
+        "steps": [
+          "1. الدخول إلى وحدة FRM (وحدة القدم).",
+          "2. البحث عن إعدادات DRLs (أضواء القيادة النهارية).",
+          "3. تفعيل نمط أضواء النهار الاسكندنافية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 38,
         "title": "M View Cluster Logo",
         "description": "تفعيل شعار M في لوحة العدادات بنمط العرض M.",
         "category": "العرض",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/8b5fe8386d999b366f513f18496d7230_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/8b5fe8386d999b366f513f18496d7230_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعداد شعار لوحة العدادات.",
+          "3. تحديد شعار M View.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 39,
         "title": "Rear Seat Belts Reminder Menu",
         "description": "تفعيل قائمة تذكير أحزمة الأمان للمقاعد الخلفية.",
         "category": "السلامة",
         "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/5c692f5330b674a618b7afa3604add04_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/5c692f5330b674a618b7afa3604add04_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات تذكير أحزمة الأمان.",
+          "3. تفعيل قائمة المقاعد الخلفية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 40,
         "title": "Active Sound Design Deactivation",
         "description": "إلغاء تنشيط نظام الصوت النشط (ASD).",
         "category": "الصوت",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/159a4022221dacd99df5556dead2d5bb_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/159a4022221dacd99df5556dead2d5bb_oca_picture.jpg",
+        "ecu": "ASD",
+        "steps": [
+          "1. الدخول إلى وحدة ASD (تصميم الصوت النشط).",
+          "2. البحث عن معلمة 'ASD_Deaktivierung'.",
+          "3. تغيير القيمة إلى 'aktiv' أو 'deaktiviert' حسب الرغبة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 41,
         "title": "ECO PRO Coasting Mode",
         "description": "تفعيل وضع الانزلاق في ECO PRO.",
         "category": "وضع القيادة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/40b747b342a0e62a4cb41e010cbd8b3c_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/40b747b342a0e62a4cb41e010cbd8b3c_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. البحث عن إعدادات ECO PRO.",
+          "3. تفعيل وضع الانزلاق (Coasting).",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 42,
         "title": "Comfort+ Mode",
         "description": "تفعيل وضع Comfort+.",
         "category": "وضع القيادة",
         "price": "130",
-        "image_url": "https://storage.obdeleven.com/parse/c4e5ef27ac26d52bc4fc01c0be79da6e_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c4e5ef27ac26d52bc4fc01c0be79da6e_oca_picture.jpg",
+        "ecu": "ICM",
+        "steps": [
+          "1. الدخول إلى وحدة ICM.",
+          "2. البحث عن إعدادات وضع القيادة.",
+          "3. تفعيل وضع Comfort+.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 43,
         "title": "Brake Lights Test",
         "description": "اختبار أضواء الفرامل.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/79c83239c057fff25d0ffc0290e44f83_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/79c83239c057fff25d0ffc0290e44f83_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار أضواء الفرامل من قائمة التشخيص.",
+          "3. التحقق من عمل الأضواء."
+        ]
       },
       {
+        "id": 44,
         "title": "Reversing Lights Test",
         "description": "اختبار أضواء الرجوع للخلف.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/44ecec72499c9f1c68a9bbd6381c4577_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/44ecec72499c9f1c68a9bbd6381c4577_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار أضواء الرجوع للخلف من قائمة التشخيص.",
+          "3. التحقق من عمل الأضواء."
+        ]
       },
       {
+        "id": 45,
         "title": "Windscreen Washer Pump Test",
         "description": "اختبار مضخة غسيل الزجاج الأمامي.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/98e61f5539a545cfede9847ac8f79d3a_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/98e61f5539a545cfede9847ac8f79d3a_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار مضخة غسيل الزجاج الأمامي.",
+          "3. التحقق من عمل المضخة."
+        ]
       },
       {
+        "id": 46,
         "title": "Radiator Blind Opening and Closing ",
         "description": "اختبار فتح وإغلاق ستارة المبرد.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/191ec48271def6879338a979daa8a382_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/191ec48271def6879338a979daa8a382_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. تنفيذ اختبار ستارة المبرد.",
+          "3. التحقق من عملها."
+        ]
       },
       {
+        "id": 47,
         "title": "Steering Wheel Vibration Test",
         "description": "اختبار اهتزاز عجلة القيادة.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/05671bc403200ee80861cd573d2f049b_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/05671bc403200ee80861cd573d2f049b_oca_picture.jpg",
+        "ecu": "ICM",
+        "steps": [
+          "1. الدخول إلى وحدة ICM.",
+          "2. تنفيذ اختبار اهتزاز عجلة القيادة.",
+          "3. التحقق من عمل الاهتزاز."
+        ]
       },
       {
+        "id": 48,
         "title": "Engine Fan Test",
         "description": "اختبار مروحة المحرك.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/695fd1be4b24dfd3b5222090d16f520a_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/695fd1be4b24dfd3b5222090d16f520a_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. تنفيذ اختبار مروحة المحرك.",
+          "3. التحقق من عمل المروحة."
+        ]
       },
       {
+        "id": 49,
         "title": "Horn Test",
         "description": "اختبار البوق.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/25004774a9c5fa633d3660c65c76ece0_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/25004774a9c5fa633d3660c65c76ece0_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. تنفيذ اختبار البوق.",
+          "3. التحقق من عمل البوق."
+        ]
       },
       {
+        "id": 50,
         "title": "Rear Fog Lights Test",
         "description": "اختبار أضواء الضباب الخلفية.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/91efcacfe9b197171c786f359ca28c20_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/91efcacfe9b17171c786f359ca28c20_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار أضواء الضباب الخلفية.",
+          "3. التحقق من عمل الأضواء."
+        ]
       },
       {
+        "id": 51,
         "title": "Headlights Check",
         "description": "فحص المصابيح الأمامية.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/f0169c9a66aeaa3564a54473b65c9039_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/f0169c9a66aeaa3564a54473b65c9039_oca_picture.jpg",
+        "ecu": "FRM",
+        "steps": [
+          "1. الدخول إلى وحدة FRM.",
+          "2. تنفيذ فحص شامل للمصابيح الأمامية.",
+          "3. التحقق من عمل جميع أجزاء المصابيح."
+        ]
       },
       {
+        "id": 52,
         "title": "Instrument Cluster Lights Test",
         "description": "اختبار أضواء لوحة العدادات.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/06b677511a8683a43e283a03c7bb6f50_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/06b677511a8683a43e283a03c7bb6f50_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. تنفيذ اختبار أضواء لوحة العدادات.",
+          "3. التحقق من إضاءة جميع المؤشرات."
+        ]
       },
       {
+        "id": 53,
         "title": "SOS Emergency Call System",
         "description": "فحص نظام الاتصال الطارئ SOS.",
         "category": "السلامة",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/63c12ebda4e28525f79ced7e43280430_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/63c12ebda4e28525f79ced7e43280430_oca_picture.jpg",
+        "ecu": "TELEMATIK",
+        "steps": [
+          "1. الدخول إلى وحدة TELEMATIK.",
+          "2. تنفيذ فحص لنظام SOS.",
+          "3. التأكد من جاهزية النظام."
+        ]
       },
       {
+        "id": 54,
         "title": "Brake Fluid Reset",
         "description": "إعادة ضبط سائل الفرامل.",
         "category": "الصيانة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/b54f3a14eb0d261c6fcb72bb2ca76507_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/b54f3a14eb0d261c6fcb72bb2ca76507_oca_picture.jpg",
+        "ecu": "DSC",
+        "steps": [
+          "1. الدخول إلى وحدة DSC (نظام التحكم الديناميكي بالثبات).",
+          "2. تنفيذ وظيفة إعادة ضبط سائل الفرامل.",
+          "3. تأكيد إعادة الضبط."
+        ]
       },
       {
+        "id": 55,
         "title": "Engine Oil Reset",
         "description": "إعادة ضبط زيت المحرك.",
         "category": "الصيانة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/a4928157214fe0311f38de63854ff1cd_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/a4928157214fe0311f38de63854ff1cd_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. تنفيذ وظيفة إعادة ضبط زيت المحرك.",
+          "3. تأكيد إعادة الضبط."
+        ]
       },
       {
+        "id": 56,
         "title": "Front Brake Pads Reset",
         "description": "إعادة ضبط تيل الفرامل الأمامية.",
         "category": "الصيانة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/e404e4d551c5f55da70f2fbaa034f0ee_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/e404e4d551c5f55da70f2fbaa034f0ee_oca_picture.jpg",
+        "ecu": "DSC",
+        "steps": [
+          "1. الدخول إلى وحدة DSC.",
+          "2. تنفيذ وظيفة إعادة ضبط تيل الفرامل الأمامية.",
+          "3. تأكيد إعادة الضبط."
+        ]
       },
       {
+        "id": 57,
         "title": "Rear Brake Pads Reset",
         "description": "إعادة ضبط تيل الفرامل الخلفية.",
         "category": "الصيانة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/daa9554fbda4dbb659e12c6dcd6a5e86_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/daa9554fbda4dbb659e12c6dcd6a5e86_oca_picture.jpg",
+        "ecu": "DSC",
+        "steps": [
+          "1. الدخول إلى وحدة DSC.",
+          "2. تنفيذ وظيفة إعادة ضبط تيل الفرامل الخلفية.",
+          "3. تأكيد إعادة الضبط."
+        ]
       },
       {
+        "id": 58,
         "title": "Vehicle Check Reset",
         "description": "إعادة ضبط فحص السيارة.",
         "category": "الصيانة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/b7ce4b499333c3aeb4fcaa413683e3c0_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/b7ce4b499333c3aeb4fcaa413683e3c0_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. تنفيذ وظيفة إعادة ضبط فحص السيارة.",
+          "3. تأكيد إعادة الضبط."
+        ]
       },
       {
+        "id": 59,
         "title": "Sport Displays",
         "description": "تفعيل شاشات العرض الرياضية.",
         "category": "العرض",
         "price": "110",
-        "image_url": "https://storage.obdeleven.com/parse/503c60d9d59f49ee5fe65487b9e80038_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/503c60d9d59f49ee5fe65487b9e80038_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات العرض.",
+          "3. تفعيل شاشات الأداء الرياضي.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 60,
         "title": "Video in Motion",
         "description": "تفعيل تشغيل الفيديو أثناء القيادة.",
         "category": "الترفيه",
         "price": "180",
-        "image_url": "https://storage.obdeleven.com/parse/edf807d20d731007d9bf380b7c28e886_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/edf807d20d731007d9bf380b7c28e886_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات الفيديو.",
+          "3. تفعيل خيار تشغيل الفيديو أثناء الحركة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 61,
         "title": "Tow Hitch Display",
         "description": "تفعيل عرض معلومات وصلة الجر.",
         "category": "العرض",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/4aeff12b62f3fbace5e8613285232f68_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/4aeff12b62f3fbace5e8613285232f68_oca_picture.jpg",
+        "ecu": "TRM",
+        "steps": [
+          "1. الدخول إلى وحدة TRM (وحدة مقطورة).",
+          "2. البحث عن إعدادات وصلة الجر.",
+          "3. تفعيل عرض المعلومات.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 62,
         "title": "Comfort Operation via CA",
         "description": "تفعيل وظائف الراحة عبر نظام الوصول المريح (Comfort Access).",
         "category": "الراحة",
         "price": "120",
-        "image_url": "https://storage.obdeleven.com/parse/16ac1f179b8edc90c11b1fefbb611c33_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/16ac1f179b8edc90c11b1fefbb611c33_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات Comfort Access.",
+          "3. تفعيل وظائف الراحة (مثل فتح/إغلاق النوافذ).",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 63,
         "title": "Sport Displays Color",
         "description": "تغيير لون شاشات العرض الرياضية.",
         "category": "العرض",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/45f535c8fd75cdbea9656621b9a3a7c9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/45f535c8fd75cdbea9656621b9a3a7c9_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات شاشات العرض الرياضية.",
+          "3. تغيير اللون.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 64,
         "title": "Maximum Volume",
         "description": "تعديل مستوى الصوت الأقصى.",
         "category": "الصوت",
         "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/d4a8c7d87179af7df7f76789b3d6ae91_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/d4a8c7d87179af7df7f76789b3d6ae91_oca_picture.jpg",
+        "ecu": "RAM",
+        "steps": [
+          "1. الدخول إلى وحدة RAM (وحدة الصوت).",
+          "2. البحث عن إعدادات مستوى الصوت.",
+          "3. تعديل القيمة القصوى للصوت.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 65,
         "title": "NBT EVO Menu Style",
         "description": "تغيير نمط قائمة NBT EVO.",
         "category": "العرض",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/265862d2f2fdcd1ae6689152080e9f8d_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/265862d2f2fdcd1ae6689152080e9f8d_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات نمط القائمة.",
+          "3. تفعيل نمط NBT EVO.",
+          "4. حفظ التغييرات."
+        ]
       }
     ]
   },
@@ -462,1633 +957,2836 @@
     "generation": "g30",
     "activations": [
       {
+        "id": 1,
         "title": "تفعيل عرض معلومات المحرك",
-        "description": "عرض معلومات إضافية عن المحرك في شاشة العدادات",
+        "description": "عرض معلومات إضافية عن المحرك في شاشة العدادات.",
         "category": "العرض",
-        "price": "130"
+        "price": "130",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن خيار عرض معلومات المحرك.",
+          "3. تفعيله وحفظ الإعدادات."
+        ]
       },
       {
+        "id": 2,
         "title": "تفعيل وضع الرياضة الفردي",
-        "description": "تفعيل إمكانية تخصيص وضع القيادة الرياضية حسب تفضيلاتك الشخصية",
+        "description": "تفعيل إمكانية تخصيص وضع القيادة الرياضية حسب تفضيلاتك الشخصية.",
         "category": "وضع القيادة",
-        "price": "150"
+        "price": "150",
+        "ecu": "ICM",
+        "steps": [
+          "1. الدخول إلى وحدة ICM.",
+          "2. البحث عن معلمة وضع القيادة الرياضية الفردي.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 3,
         "title": "تفعيل وظيفة الترحيب الضوئي",
-        "description": "إضاءة المصابيح بنمط خاص عند فتح السيارة",
+        "description": "إضاءة المصابيح بنمط خاص عند فتح السيارة.",
         "category": "الإضاءة",
-        "price": "120"
+        "price": "120",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات الترحيب الضوئي.",
+          "3. تفعيل النمط المطلوب وحفظ التغييرات."
+        ]
       },
       {
+        "id": 4,
         "title": "تفعيل وظيفة الإضاءة المحيطة المتقدمة",
-        "description": "إضافة ألوان وأنماط إضافية للإضاءة المحيطة داخل السيارة",
+        "description": "إضافة ألوان وأنماط إضافية للإضاءة المحيطة داخل السيارة.",
         "category": "الإضاءة",
-        "price": "180"
+        "price": "180",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن إعدادات الإضاءة المحيطة.",
+          "3. تفعيل الألوان والأنماط الإضافية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 5,
         "title": "تفعيل وظيفة الركن التلقائي المتقدمة",
-        "description": "تحسين وظيفة الركن التلقائي وإضافة خيارات إضافية",
+        "description": "تحسين وظيفة الركن التلقائي وإضافة خيارات إضافية.",
         "category": "مساعدة السائق",
-        "price": "200"
+        "price": "200",
+        "ecu": "PDC",
+        "steps": [
+          "1. الدخول إلى وحدة PDC (التحكم في مسافة الركن).",
+          "2. البحث عن إعدادات الركن التلقائي.",
+          "3. تفعيل التحسينات والخيارات الإضافية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 6,
         "title": "Trunk Closing via Interior Button",
         "description": "تفعيل إغلاق صندوق الأمتعة من الزر الداخلي.",
         "category": "الراحة",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/3ecd529aff7d0ab6637e6f34563cd46f_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/3ecd529aff7d0ab6637e6f34563cd46f_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن وظيفة إغلاق الصندوق من الداخل.",
+          "3. تفعيل هذه الوظيفة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 7,
         "title": "Wiper Cycle Completion",
         "description": "تفعيل إكمال دورة المساحات بعد إيقاف تشغيل السيارة.",
         "category": "الراحة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/750ddf869ed2d7d450c54a3739ff3c77_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/750ddf869ed2d7d450c54a3739ff3c77_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن معلمة 'Scheibenwischer_Nachlauf'.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 8,
         "title": "Ignition OFF when Exiting",
         "description": "تفعيل إيقاف تشغيل الإشعال تلقائيًا عند الخروج من السيارة.",
         "category": "الراحة",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/9059670dcf1745502608bbd3d3d62ee7_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/9059670dcf1745502608bbd3d3d62ee7_oca_picture.jpg",
+        "ecu": "CAS",
+        "steps": [
+          "1. الدخول إلى وحدة CAS (نظام الوصول المريح).",
+          "2. البحث عن معلمة 'Zuendung_Aus_Beim_Aussteigen'.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 9,
         "title": "Electronics OFF when Exiting",
         "description": "تفعيل إيقاف تشغيل الإلكترونيات تلقائيًا عند الخروج من السيارة.",
         "category": "الراحة",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/008fdc80d60b3edeb200ef8fc36e000c_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/008fdc80d60b3edeb200ef8fc36e000c_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن معلمة 'Elektronik_Aus_Beim_Aussteigen'.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 10,
         "title": "Comfort Operation via Door Lock",
         "description": "تفعيل وظائف الراحة (مثل فتح/إغلاق النوافذ) عن طريق قفل الباب.",
         "category": "الراحة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/ed76f27597313454a659aa2bb09c457b_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/ed76f27597313454a659aa2bb09c457b_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات الراحة لقفل الباب.",
+          "3. تفعيل الوظائف المطلوبة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 11,
         "title": "Start/Stop Default Setting",
         "description": "تغيير الإعداد الافتراضي لنظام Start/Stop.",
         "category": "وضع القيادة",
         "price": "110",
-        "image_url": "https://storage.obdeleven.com/parse/1ef7a9393adb9d197d0327c34cda0130_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/1ef7a9393adb9d197d0327c34cda0130_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. البحث عن إعدادات Start/Stop.",
+          "3. تعديل القيمة الافتراضية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 12,
         "title": "Comfort Operation via Key Fob",
         "description": "تفعيل وظائف الراحة (مثل فتح/إغلاق النوافذ) عن طريق مفتاح السيارة.",
         "category": "الراحة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/e311254b0aa70298eed3d3173c86999e_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/e311254b0aa70298eed3d3173c86999e_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات الراحة لمفتاح السيارة.",
+          "3. تفعيل الوظائف المطلوبة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 13,
         "title": "Headlight Washer System",
         "description": "تفعيل نظام غسيل المصابيح الأمامية.",
         "category": "الإضاءة",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/f11600475ca1f96df6bc167604cee481_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/f11600475ca1f96df6bc167604cee481_oca_picture.jpg",
+        "ecu": "FRM",
+        "steps": [
+          "1. الدخول إلى وحدة FRM (وحدة القدم).",
+          "2. البحث عن إعدادات نظام غسيل المصابيح.",
+          "3. تفعيل النظام.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 14,
         "title": "Date Display in OBC",
         "description": "تفعيل عرض التاريخ في شاشة كمبيوتر الرحلة (OBC).",
         "category": "العرض",
         "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/42a6762d2d30269f435b1b9eb1f566df_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/42a6762d2d30269f435b1b9eb1f566df_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات شاشة OBC.",
+          "3. تفعيل عرض التاريخ.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 15,
         "title": "Comfort Mirrors",
         "description": "تفعيل وظيفة طي المرايا الجانبية للراحة.",
         "category": "الراحة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/67b7fc7999c8eb8358e958db1431c533_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/67b7fc7999c8eb8358e958db1431c533_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات المرايا.",
+          "3. تفعيل وظيفة الطي المريح.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 16,
         "title": "Side Mirrors Unfold Threshold",
         "description": "تعديل عتبة السرعة لفتح المرايا الجانبية تلقائيًا.",
         "category": "الراحة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/1c846e136e99453f0610eb1f5f8b0449_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/1c846e136e99453f0610eb1f5f8b0449_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات المرايا.",
+          "3. تعديل عتبة السرعة لفتح المرايا.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 17,
         "title": "Sunroof Delay for Comfort Opening",
         "description": "تأخير فتح فتحة السقف لعملية الفتح المريح.",
         "category": "الراحة",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/ff54ed21bc373b5f667bf7d2f0da0afd_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/ff54ed21bc373b5f667bf7d2f0da0afd_oca_picture.jpg",
+        "ecu": "JBBF",
+        "steps": [
+          "1. الدخول إلى وحدة JBBF (صندوق التوصيل الأمامي).",
+          "2. البحث عن إعدادات فتحة السقف.",
+          "3. تعديل تأخير الفتح المريح.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 18,
         "title": "5 Times Comfort Turn Signals",
         "description": "تفعيل وميض إشارة الانعطاف 5 مرات بضغطة واحدة.",
         "category": "الإضاءة",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/0e66d343c0e35fd1b560772027d43d62_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/0e66d343c0e35fd1b560772027d43d62_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن معلمة 'Blinkzyklen_Komfortblinken'.",
+          "3. تغيير القيمة إلى '5'.",
+          "4. حفظ التغييرات وتشفير الوحدة."
+        ]
       },
       {
+        "id": 19,
         "title": "M Logo Startup Animation",
         "description": "تغيير رسوم بدء التشغيل على شاشة iDrive إلى شعار M.",
         "category": "العرض",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/c6084ab451c88bc8ef157eb3c16c83d8_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c6084ab451c88bc8ef157eb3c16c83d8_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعداد رسوم بدء التشغيل.",
+          "3. تحديد شعار M Performance.",
+          "4. حفظ التغييرات وإعادة تشغيل iDrive."
+        ]
       },
       {
+        "id": 20,
         "title": "M View Style Cluster",
         "description": "تفعيل نمط عرض M في لوحة العدادات.",
         "category": "العرض",
         "price": "120",
-        "image_url": "https://storage.obdeleven.com/parse/f8030b56910a732fe26c7d2fc3a6e2a9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/f8030b56910a732fe26c7d2fc3a6e2a9_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعداد نمط العرض.",
+          "3. تحديد نمط M View.",
+          "4. حفظ التغييرات وإعادة تشغيل iDrive."
+        ]
       },
       {
+        "id": 21,
         "title": "Default Driving Mode",
         "description": "تعيين وضع القيادة الافتراضي عند بدء تشغيل السيارة.",
         "category": "وضع القيادة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/a29fd63d2f5ac00386477960dd2cb340_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/a29fd63d2f5ac00386477960dd2cb340_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. البحث عن إعداد وضع القيادة الافتراضي.",
+          "3. ضبط الوضع المطلوب (مثل Sport أو Comfort).",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 22,
         "title": "Horn on Secure",
         "description": "تفعيل صوت البوق عند قفل السيارة.",
         "category": "الراحة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/ec3ea21397f01a38cfacfec8a45f86e0_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/ec3ea21397f01a38cfacfec8a45f86e0_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن معلمة 'Akustische_Verriegelungsbestaetigung'.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 23,
         "title": "TPMS Pressure and Temperature Display",
         "description": "عرض ضغط ودرجة حرارة الإطارات في شاشة النظام.",
         "category": "العرض",
         "price": "110",
-        "image_url": "https://storage.obdeleven.com/parse/750b6938e0867d44071bbc032182c8cd_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/750b6938e0867d44071bbc032182c8cd_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات TPMS.",
+          "3. تفعيل خيار عرض الضغط ودرجة الحرارة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 24,
         "title": "iDrive Warnings",
         "description": "تخصيص أو إيقاف تحذيرات iDrive.",
         "category": "العرض",
         "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/66b0c574cd714768234e1a7a15d798cb_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/66b0c574cd714768234e1a7a15d798cb_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات التحذيرات.",
+          "3. تخصيص التحذيرات المطلوبة أو إلغاء تنشيطها.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 25,
         "title": "Front Fog Lights w/ High Beams",
         "description": "تفعيل المصابيح الأمامية للضباب مع الأضواء العالية.",
         "category": "الإضاءة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/a06b85fa78830e85946ef8354f02a95c_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/a06b85fa78830e85946ef8354f02a95c_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات مصابيح الضباب.",
+          "3. تفعيل العمل مع الأضواء العالية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 26,
         "title": "Front Fog Lights w/ Parking Lights",
         "description": "تفعيل المصابيح الأمامية للضباب مع أضواء الوقوف.",
         "category": "الإضاءة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/d5b143538118c4617d57ca691c004a75_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/d5b143538118c4617d57ca691c004a75_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات مصابيح الضباب.",
+          "3. تفعيل العمل مع أضواء الوقوف.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 27,
         "title": "Sport+ Mode",
         "description": "تفعيل وضع Sport+ للقيادة الرياضية المعززة.",
         "category": "وضع القيادة",
         "price": "150",
-        "image_url": "https://storage.obdeleven.com/parse/c75546901cd815e8400b4c9e57c8fbda_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c75546901cd815e8400b4c9e57c8fbda_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. البحث عن إعدادات أوضاع القيادة.",
+          "3. تفعيل وضع Sport+.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 28,
         "title": "X-View Display",
         "description": "تفعيل عرض X-View في شاشة العدادات (معلومات الطرق الوعرة).",
         "category": "العرض",
         "price": "140",
-        "image_url": "https://storage.obdeleven.com/parse/95a01cce6a9a4153c2482bbf90f114c9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/95a01cce6a9a4153c2482bbf90f114c9_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات العرض.",
+          "3. تفعيل خيار X-View.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 29,
         "title": "Tire Pressure Display in Dashboard",
         "description": "عرض ضغط الإطارات مباشرة في لوحة العدادات.",
         "category": "العرض",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/0834629027df2df27c0cadcf82a7331c_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/0834629027df2df27c0cadcf82a7331c_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات عرض ضغط الإطارات.",
+          "3. تفعيل العرض في لوحة العدادات.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 30,
         "title": "Speedometer Scale Display",
         "description": "عرض مقياس السرعة بتصميمات إضافية.",
         "category": "العرض",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/7ce0f6abb9b268656316bc71ee153735_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/7ce0f6abb9b268656316bc71ee153735_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات مقياس السرعة.",
+          "3. تفعيل التصميمات الإضافية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 31,
         "title": "Alpina Style Display",
         "description": "تفعيل نمط عرض Alpina في لوحة العدادات.",
         "category": "العرض",
         "price": "160",
-        "image_url": "https://storage.obdeleven.com/parse/c873e490b1314a701f9bf13f0d73450d_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c873e490b1314a701f9bf13f0d73450d_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن نمط العرض.",
+          "3. تفعيل نمط Alpina.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 32,
         "title": "RLS Sensitivity",
         "description": "تعديل حساسية مستشعر المطر والضوء.",
         "category": "الإضاءة",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/2e9a187ad3e4975457c828d32b265d00_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/2e9a187ad3e4975457c828d32b265d00_oca_picture.jpg",
+        "ecu": "FRM",
+        "steps": [
+          "1. الدخول إلى وحدة FRM.",
+          "2. البحث عن إعدادات حساسية مستشعر المطر/الضوء (RLS).",
+          "3. تعديل القيمة إلى المستوى المطلوب.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 33,
         "title": "Seats Heating/Cooling Memory",
         "description": "تفعيل ذاكرة تسخين/تبريد المقاعد.",
         "category": "الراحة",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/3bc5584b31e29dafb299a32a307548c1_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/3bc5584b31e29dafb299a32a307548c1_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات ذاكرة المقاعد.",
+          "3. تفعيل وظيفة ذاكرة التسخين/التبريد.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 34,
         "title": "Self Locking Time",
         "description": "تعديل وقت القفل التلقائي للأبواب.",
         "category": "الراحة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/017f0cfdfafb6470f1d675974345b4b9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/017f0cfdfafb6470f1d675974345b4b9_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات القفل التلقائي.",
+          "3. تعديل الوقت إلى القيمة المطلوبة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 35,
         "title": "Power Front Windows Safety",
         "description": "تعديل حساسية نظام أمان النوافذ الأمامية.",
         "category": "الراحة",
         "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/2605b25bfe3bf986a09a12dd6ccbafe2_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/2605b25bfe3bf986a09a12dd6ccbafe2_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات أمان النوافذ.",
+          "3. تعديل مستوى الحساسية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 36,
         "title": "Emergency Braking Lights",
         "description": "تفعيل أضواء الفرامل الوامضة في حالات الفرملة الطارئة.",
         "category": "الإضاءة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/b550b5057a30ee8204ffd16ec8a730e9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/b550b5057a30ee8204ffd16ec8a730e9_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات أضواء الفرامل.",
+          "3. تفعيل وظيفة الوميض عند الفرملة الطارئة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 37,
         "title": "LED License Plate Lights",
         "description": "تعديل إعدادات أضواء لوحة الترخيص LED.",
         "category": "الإضاءة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/be7c9596369c14bf9a35bce7a9634dff_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/be7c9596369c14bf9a35bce7a9634dff_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات أضواء لوحة الترخيص.",
+          "3. تعديل الإعدادات للتعامل مع أضواء LED.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 38,
         "title": "Assisted Driving View",
         "description": "تفعيل عرض مساعدة القيادة في الشاشة.",
         "category": "مساعدة السائق",
         "price": "130",
-        "image_url": "https://storage.obdeleven.com/parse/164733e1175a7eab139864fbfd94e301_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/164733e1175a7eab139864fbfd94e301_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات عرض مساعدة القيادة.",
+          "3. تفعيل العرض.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 39,
         "title": "Acoustic Unlock Confirmation",
         "description": "تفعيل صوت تأكيد فتح الأبواب.",
         "category": "الراحة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/daad8bd4bd769adee75ba9f287b93766_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/daad8bd4bd769adee75ba9f287b93766_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن معلمة 'Akustische_Entriegelungsbestaetigung'.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 40,
         "title": "Automatic Lane Change",
         "description": "تفعيل وظيفة تغيير المسار التلقائي.",
         "category": "مساعدة السائق",
         "price": "180",
-        "image_url": "https://storage.obdeleven.com/parse/fcd9a3378aa7aa47880fbcd7704588d5_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/fcd9a3378aa7aa47880fbcd7704588d5_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات مساعدة السائق.",
+          "3. تفعيل وظيفة تغيير المسار التلقائي (يتطلب تجهيزات مساعدة السائق المتقدمة).",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 41,
         "title": "Bower & Wilkins Audio",
         "description": "تفعيل إعدادات صوت Bower & Wilkins (إذا كان النظام متوفرًا).",
         "category": "الصوت",
         "price": "200",
-        "image_url": "https://storage.obdeleven.com/parse/3acc77e1efe3590de5374403c43c7431_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/3acc77e1efe3590de5374403c43c7431_oca_picture.jpg",
+        "ecu": "RAM",
+        "steps": [
+          "1. الدخول إلى وحدة RAM (وحدة الصوت).",
+          "2. البحث عن إعدادات نظام الصوت.",
+          "3. تفعيل أو ضبط إعدادات Bower & Wilkins.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 42,
         "title": "12V Battery Registration",
         "description": "تسجيل بطارية 12 فولت جديدة.",
         "category": "الصيانة",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/9caeb45c0000578cee2c94f4dc644983_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/9caeb45c0000578cee2c94f4dc644983_oca_picture.jpg",
+        "ecu": "JBBF",
+        "steps": [
+          "1. الدخول إلى وحدة JBBF (صندوق التوصيل الأمامي).",
+          "2. تنفيذ وظيفة تسجيل البطارية الجديدة.",
+          "3. تأكيد التسجيل."
+        ]
       },
       {
+        "id": 43,
         "title": "Engine Sound Menu",
         "description": "تفعيل قائمة إعدادات صوت المحرك.",
         "category": "الصوت",
         "price": "110",
-        "image_url": "https://storage.obdeleven.com/parse/a28d870764ebd97ea21cce79475e45cf_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/a28d870764ebd97ea21cce79475e45cf_oca_picture.jpg",
+        "ecu": "ASD",
+        "steps": [
+          "1. الدخول إلى وحدة ASD (تصميم الصوت النشط).",
+          "2. البحث عن إعدادات قائمة صوت المحرك.",
+          "3. تفعيل القائمة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 44,
         "title": "Instrument Cluster Logo",
         "description": "تغيير شعار لوحة العدادات.",
         "category": "العرض",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/9281fcbd489723b44ffb99ea3f40e912_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/9281fcbd489723b44ffb99ea3f40e912_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعداد شعار لوحة العدادات.",
+          "3. تحديد الشعار المطلوب.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 45,
         "title": "Automatic Steering Wheel Heating",
         "description": "تفعيل التسخين التلقائي لعجلة القيادة.",
         "category": "الراحة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/fa73e81d4d099184693965f006cedf88_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/fa73e81d4d099184693965f006cedf88_oca_picture.jpg",
+        "ecu": "SZL",
+        "steps": [
+          "1. الدخول إلى وحدة SZL (مركز تبديل التوجيه).",
+          "2. البحث عن إعدادات تدفئة عجلة القيادة.",
+          "3. تفعيل التسخين التلقائي.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 46,
         "title": "Ambient Lighting Instead of Bronze",
         "description": "تغيير لون الإضاءة المحيطة من البرونزي.",
         "category": "الإضاءة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/2f4d0c62ee132453ff0bced6d80618c8_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/2f4d0c62ee132453ff0bced6d80618c8_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن إعدادات الإضاءة المحيطة.",
+          "3. تغيير اللون الافتراضي من البرونزي.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 47,
         "title": "Ambient Color Instead of Bronze",
         "description": "تغيير لون الإضاءة المحيطة من البرونزي.",
         "category": "الإضاءة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/26e104be19815c2325202b469119bac7_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/26e104be19815c2325202b469119bac7_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن إعدادات الإضاءة المحيطة.",
+          "3. تغيير اللون الافتراضي من البرونزي.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 48,
         "title": "Rain Closing",
         "description": "إغلاق النوافذ وفتحة السقف تلقائيًا عند استشعار المطر.",
         "category": "الراحة",
         "price": "120",
-        "image_url": "https://storage.obdeleven.com/parse/36d4dc3fa8e848c0d6a2f74f26733a39_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/36d4dc3fa8e848c0d6a2f74f26733a39_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن معلمة 'Regenschliessen'.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 49,
         "title": "Scandinavian DRLs",
         "description": "تفعيل أضواء النهار الاسكندنافية.",
         "category": "الإضاءة",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/8722d3c8cc595754444c10f2b88896c9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/8722d3c8cc595754444c10f2b88896c9_oca_picture.jpg",
+        "ecu": "FRM",
+        "steps": [
+          "1. الدخول إلى وحدة FRM.",
+          "2. البحث عن إعدادات DRLs (أضواء القيادة النهارية).",
+          "3. تفعيل نمط أضواء النهار الاسكندنافية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 50,
         "title": "M View Cluster Logo",
         "description": "تفعيل شعار M في لوحة العدادات بنمط العرض M.",
         "category": "العرض",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/8b5fe8386d999b366f513f18496d7230_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/8b5fe8386d999b366f513f18496d7230_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعداد شعار لوحة العدادات.",
+          "3. تحديد شعار M View.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 51,
         "title": "Rear Seat Belts Reminder Menu",
         "description": "تفعيل قائمة تذكير أحزمة الأمان للمقاعد الخلفية.",
         "category": "السلامة",
         "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/5c692f5330b674a618b7afa3604add04_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/5c692f5330b674a618b7afa3604add04_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات تذكير أحزمة الأمان.",
+          "3. تفعيل قائمة المقاعد الخلفية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 52,
         "title": "Active Sound Design Deactivation",
         "description": "إلغاء تنشيط نظام الصوت النشط (ASD).",
         "category": "الصوت",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/159a4022221dacd99df5556dead2d5bb_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/159a4022221dacd99df5556dead2d5bb_oca_picture.jpg",
+        "ecu": "ASD",
+        "steps": [
+          "1. الدخول إلى وحدة ASD (تصميم الصوت النشط).",
+          "2. البحث عن معلمة 'ASD_Deaktivierung'.",
+          "3. تغيير القيمة إلى 'aktiv' أو 'deaktiviert' حسب الرغبة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 53,
         "title": "ECO PRO Coasting Mode",
         "description": "تفعيل وضع الانزلاق في ECO PRO.",
         "category": "وضع القيادة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/40b747b342a0e62a4cb41e010cbd8b3c_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/40b747b342a0e62a4cb41e010cbd8b3c_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. البحث عن إعدادات ECO PRO.",
+          "3. تفعيل وضع الانزلاق (Coasting).",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 54,
         "title": "Comfort+ Mode",
         "description": "تفعيل وضع Comfort+.",
         "category": "وضع القيادة",
         "price": "130",
-        "image_url": "https://storage.obdeleven.com/parse/c4e5ef27ac26d52bc4fc01c0be79da6e_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c4e5ef27ac26d52bc4fc01c0be79da6e_oca_picture.jpg",
+        "ecu": "ICM",
+        "steps": [
+          "1. الدخول إلى وحدة ICM.",
+          "2. البحث عن إعدادات وضع القيادة.",
+          "3. تفعيل وضع Comfort+.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 55,
         "title": "Brake Lights Test",
         "description": "اختبار أضواء الفرامل.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/79c83239c057fff25d0ffc0290e44f83_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/79c83239c057fff25d0ffc0290e44f83_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار أضواء الفرامل من قائمة التشخيص.",
+          "3. التحقق من عمل الأضواء."
+        ]
       },
       {
+        "id": 56,
         "title": "Reversing Lights Test",
         "description": "اختبار أضواء الرجوع للخلف.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/44ecec72499c9f1c68a9bbd6381c4577_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/44ecec72499c9f1c68a9bbd6381c4577_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار أضواء الرجوع للخلف من قائمة التشخيص.",
+          "3. التحقق من عمل الأضواء."
+        ]
       },
       {
+        "id": 57,
         "title": "Windscreen Washer Pump Test",
         "description": "اختبار مضخة غسيل الزجاج الأمامي.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/98e61f5539a545cfede9847ac8f79d3a_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/98e61f5539a545cfede9847ac8f79d3a_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار مضخة غسيل الزجاج الأمامي.",
+          "3. التحقق من عمل المضخة."
+        ]
       },
       {
+        "id": 58,
         "title": "Radiator Blind Opening and Closing ",
         "description": "اختبار فتح وإغلاق ستارة المبرد.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/191ec48271def6879338a979daa8a382_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/191ec48271def6879338a979daa8a382_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. تنفيذ اختبار ستارة المبرد.",
+          "3. التحقق من عملها."
+        ]
       },
       {
+        "id": 59,
         "title": "Steering Wheel Vibration Test",
         "description": "اختبار اهتزاز عجلة القيادة.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/05671bc403200ee80861cd573d2f049b_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/05671bc403200ee80861cd573d2f049b_oca_picture.jpg",
+        "ecu": "ICM",
+        "steps": [
+          "1. الدخول إلى وحدة ICM.",
+          "2. تنفيذ اختبار اهتزاز عجلة القيادة.",
+          "3. التحقق من عمل الاهتزاز."
+        ]
       },
       {
+        "id": 60,
         "title": "Engine Fan Test",
         "description": "اختبار مروحة المحرك.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/695fd1be4b24dfd3b5222090d16f520a_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/695fd1be4b24dfd3b5222090d16f520a_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. تنفيذ اختبار مروحة المحرك.",
+          "3. التحقق من عمل المروحة."
+        ]
       },
       {
+        "id": 61,
         "title": "Horn Test",
         "description": "اختبار البوق.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/25004774a9c5fa633d3660c65c76ece0_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/25004774a9c5fa633d3660c65c76ece0_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. تنفيذ اختبار البوق.",
+          "3. التحقق من عمل البوق."
+        ]
       },
       {
+        "id": 62,
         "title": "Rear Fog Lights Test",
         "description": "اختبار أضواء الضباب الخلفية.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/91efcacfe9b197171c786f359ca28c20_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/91efcacfe9b17171c786f359ca28c20_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار أضواء الضباب الخلفية.",
+          "3. التحقق من عمل الأضواء."
+        ]
       },
       {
+        "id": 63,
         "title": "Headlights Check",
         "description": "فحص المصابيح الأمامية.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/f0169c9a66aeaa3564a54473b65c9039_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/f0169c9a66aeaa3564a54473b65c9039_oca_picture.jpg",
+        "ecu": "FRM",
+        "steps": [
+          "1. الدخول إلى وحدة FRM.",
+          "2. تنفيذ فحص شامل للمصابيح الأمامية.",
+          "3. التحقق من عمل جميع أجزاء المصابيح."
+        ]
       },
       {
+        "id": 64,
         "title": "Instrument Cluster Lights Test",
         "description": "اختبار أضواء لوحة العدادات.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/06b677511a8683a43e283a03c7bb6f50_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/06b677511a8683a43e283a03c7bb6f50_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. تنفيذ اختبار أضواء لوحة العدادات.",
+          "3. التحقق من إضاءة جميع المؤشرات."
+        ]
       },
       {
+        "id": 65,
         "title": "SOS Emergency Call System",
         "description": "فحص نظام الاتصال الطارئ SOS.",
         "category": "السلامة",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/63c12ebda4e28525f79ced7e43280430_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/63c12ebda4e28525f79ced7e43280430_oca_picture.jpg",
+        "ecu": "TELEMATIK",
+        "steps": [
+          "1. الدخول إلى وحدة TELEMATIK.",
+          "2. تنفيذ فحص لنظام SOS.",
+          "3. التأكد من جاهزية النظام."
+        ]
+      },
+      {
+        "id": 66,
+        "title": "Brake Fluid Reset",
+        "description": "إعادة ضبط سائل الفرامل.",
+        "category": "الصيانة",
+        "price": "70",
+        "image_url": "https://storage.obdeleven.com/parse/b54f3a14eb0d261c6fcb72bb2ca76507_oca_picture.jpg",
+        "ecu": "DSC",
+        "steps": [
+          "1. الدخول إلى وحدة DSC.",
+          "2. تنفيذ وظيفة إعادة ضبط سائل الفرامل.",
+          "3. تأكيد إعادة الضبط."
+        ]
+      },
+      {
+        "id": 67,
+        "title": "Engine Oil Reset",
+        "description": "إعادة ضبط زيت المحرك.",
+        "category": "الصيانة",
+        "price": "70",
+        "image_url": "https://storage.obdeleven.com/parse/a4928157214fe0311f38de63854ff1cd_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. تنفيذ وظيفة إعادة ضبط زيت المحرك.",
+          "3. تأكيد إعادة الضبط."
+        ]
+      },
+      {
+        "id": 68,
+        "title": "Front Brake Pads Reset",
+        "description": "إعادة ضبط تيل الفرامل الأمامية.",
+        "category": "الصيانة",
+        "price": "70",
+        "image_url": "https://storage.obdeleven.com/parse/e404e4d551c5f55da70f2fbaa034f0ee_oca_picture.jpg",
+        "ecu": "DSC",
+        "steps": [
+          "1. الدخول إلى وحدة DSC.",
+          "2. تنفيذ وظيفة إعادة ضبط تيل الفرامل الأمامية.",
+          "3. تأكيد إعادة الضبط."
+        ]
+      },
+      {
+        "id": 69,
+        "title": "Rear Brake Pads Reset",
+        "description": "إعادة ضبط تيل الفرامل الخلفية.",
+        "category": "الصيانة",
+        "price": "70",
+        "image_url": "https://storage.obdeleven.com/parse/daa9554fbda4dbb659e12c6dcd6a5e86_oca_picture.jpg",
+        "ecu": "DSC",
+        "steps": [
+          "1. الدخول إلى وحدة DSC.",
+          "2. تنفيذ وظيفة إعادة ضبط تيل الفرامل الخلفية.",
+          "3. تأكيد إعادة الضبط."
+        ]
+      },
+      {
+        "id": 70,
+        "title": "Vehicle Check Reset",
+        "description": "إعادة ضبط فحص السيارة.",
+        "category": "الصيانة",
+        "price": "70",
+        "image_url": "https://storage.obdeleven.com/parse/b7ce4b499333c3aeb4fcaa413683e3c0_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. تنفيذ وظيفة إعادة ضبط فحص السيارة.",
+          "3. تأكيد إعادة الضبط."
+        ]
+      },
+      {
+        "id": 71,
+        "title": "Sport Displays",
+        "description": "تفعيل شاشات العرض الرياضية.",
+        "category": "العرض",
+        "price": "110",
+        "image_url": "https://storage.obdeleven.com/parse/503c60d9d59f49ee5fe65487b9e80038_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات العرض.",
+          "3. تفعيل شاشات الأداء الرياضي.",
+          "4. حفظ التغييرات."
+        ]
+      },
+      {
+        "id": 72,
+        "title": "Video in Motion",
+        "description": "تفعيل تشغيل الفيديو أثناء القيادة.",
+        "category": "الترفيه",
+        "price": "180",
+        "image_url": "https://storage.obdeleven.com/parse/edf807d20d731007d9bf380b7c28e886_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات الفيديو.",
+          "3. تفعيل خيار تشغيل الفيديو أثناء الحركة.",
+          "4. حفظ التغييرات."
+        ]
+      },
+      {
+        "id": 73,
+        "title": "Tow Hitch Display",
+        "description": "تفعيل عرض معلومات وصلة الجر.",
+        "category": "العرض",
+        "price": "90",
+        "image_url": "https://storage.obdeleven.com/parse/4aeff12b62f3fbace5e8613285232f68_oca_picture.jpg",
+        "ecu": "TRM",
+        "steps": [
+          "1. الدخول إلى وحدة TRM (وحدة مقطورة).",
+          "2. البحث عن إعدادات وصلة الجر.",
+          "3. تفعيل عرض المعلومات.",
+          "4. حفظ التغييرات."
+        ]
+      },
+      {
+        "id": 74,
+        "title": "Comfort Operation via CA",
+        "description": "تفعيل وظائف الراحة عبر نظام الوصول المريح (Comfort Access).",
+        "category": "الراحة",
+        "price": "120",
+        "image_url": "https://storage.obdeleven.com/parse/16ac1f179b8edc90c11b1fefbb611c33_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات Comfort Access.",
+          "3. تفعيل وظائف الراحة (مثل فتح/إغلاق النوافذ).",
+          "4. حفظ التغييرات."
+        ]
+      },
+      {
+        "id": 75,
+        "title": "Sport Displays Color",
+        "description": "تغيير لون شاشات العرض الرياضية.",
+        "category": "العرض",
+        "price": "80",
+        "image_url": "https://storage.obdeleven.com/parse/45f535c8fd75cdbea9656621b9a3a7c9_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات شاشات العرض الرياضية.",
+          "3. تغيير اللون.",
+          "4. حفظ التغييرات."
+        ]
+      },
+      {
+        "id": 76,
+        "title": "Maximum Volume",
+        "description": "تعديل مستوى الصوت الأقصى.",
+        "category": "الصوت",
+        "price": "60",
+        "image_url": "https://storage.obdeleven.com/parse/d4a8c7d87179af7df7f76789b3d6ae91_oca_picture.jpg",
+        "ecu": "RAM",
+        "steps": [
+          "1. الدخول إلى وحدة RAM (وحدة الصوت).",
+          "2. البحث عن إعدادات مستوى الصوت.",
+          "3. تعديل القيمة القصوى للصوت.",
+          "4. حفظ التغييرات."
+        ]
+      },
+      {
+        "id": 77,
+        "title": "NBT EVO Menu Style",
+        "description": "تغيير نمط قائمة NBT EVO.",
+        "category": "العرض",
+        "price": "100",
+        "image_url": "https://storage.obdeleven.com/parse/265862d2f2fdcd1ae6689152080e9f8d_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات نمط القائمة.",
+          "3. تفعيل نمط NBT EVO.",
+          "4. حفظ التغييرات."
+        ]
       }
     ]
   },
   {
     "model": "x5",
-    "year": "2018-present",
+    "year": "2018-2025",
     "generation": "g05",
     "activations": [
       {
+        "id": 1,
         "title": "تفعيل وضع الطرق الوعرة",
-        "description": "إضافة وضع قيادة مخصص للطرق الوعرة",
+        "description": "إضافة وضع قيادة مخصص للطرق الوعرة.",
         "category": "وضع القيادة",
-        "price": "180"
+        "price": "180",
+        "ecu": "ICM",
+        "steps": [
+          "1. الدخول إلى وحدة ICM.",
+          "2. البحث عن إعدادات وضع القيادة.",
+          "3. تفعيل وضع الطرق الوعرة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 2,
         "title": "تفعيل عرض معلومات الدفع الرباعي",
-        "description": "عرض معلومات توزيع العزم بين المحاور في شاشة العدادات",
+        "description": "عرض معلومات توزيع العزم بين المحاور في شاشة العدادات.",
         "category": "العرض",
-        "price": "150"
+        "price": "150",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات عرض معلومات الدفع الرباعي.",
+          "3. تفعيل العرض.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 3,
         "title": "تفعيل وظيفة الإضاءة المحيطة المتقدمة",
-        "description": "إضافة ألوان وأنماط إضافية للإضاءة المحيطة داخل السيارة",
+        "description": "إضافة ألوان وأنماط إضافية للإضاءة المحيطة داخل السيارة.",
         "category": "الإضاءة",
-        "price": "180"
+        "price": "180",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن إعدادات الإضاءة المحيطة.",
+          "3. تفعيل الألوان والأنماط الإضافية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 4,
         "title": "تفعيل وظيفة الرؤية الليلية",
-        "description": "تفعيل نظام الرؤية الليلية المتقدم للمساعدة في القيادة الليلية",
+        "description": "تفعيل نظام الرؤية الليلية المتقدم للمساعدة في القيادة الليلية.",
         "category": "مساعدة السائق",
-        "price": "250"
+        "price": "250",
+        "ecu": "FLA",
+        "steps": [
+          "1. الدخول إلى وحدة FLA (المساعدة في القيادة).",
+          "2. البحث عن إعدادات الرؤية الليلية.",
+          "3. تفعيل النظام.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 5,
         "title": "تفعيل وظيفة التحكم بالصوت المتقدمة",
-        "description": "إضافة خيارات متقدمة للتحكم الصوتي في وظائف السيارة",
+        "description": "إضافة خيارات متقدمة للتحكم الصوتي في وظائف السيارة.",
         "category": "الراحة",
-        "price": "150"
+        "price": "150",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات التحكم بالصوت.",
+          "3. تفعيل الخيارات المتقدمة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 6,
         "title": "5 Times Comfort Turn Signals",
         "description": "تفعيل وميض إشارة الانعطاف 5 مرات بضغطة واحدة.",
         "category": "الإضاءة",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/0e66d343c0e35fd1b560772027d43d62_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/0e66d343c0e35fd1b560772027d43d62_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن معلمة 'Blinkzyklen_Komfortblinken'.",
+          "3. تغيير القيمة إلى '5'.",
+          "4. حفظ التغييرات وتشفير الوحدة."
+        ]
       },
       {
+        "id": 7,
         "title": "M Logo Startup Animation",
         "description": "تغيير رسوم بدء التشغيل على شاشة iDrive إلى شعار M.",
         "category": "العرض",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/c6084ab451c88bc8ef1577eb3c16c83d8_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c6084ab451c88bc8ef1577eb3c16c83d8_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعداد رسوم بدء التشغيل.",
+          "3. تحديد شعار M Performance.",
+          "4. حفظ التغييرات وإعادة تشغيل iDrive."
+        ]
       },
       {
+        "id": 8,
         "title": "M View Style Cluster",
         "description": "تفعيل نمط عرض M في لوحة العدادات.",
         "category": "العرض",
         "price": "120",
-        "image_url": "https://storage.obdeleven.com/parse/f8030b56910a732fe26c7d2fc3a6e2a9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/f8030b56910a732fe26c7d2fc3a6e2a9_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعداد نمط العرض.",
+          "3. تحديد نمط M View.",
+          "4. حفظ التغييرات وإعادة تشغيل iDrive."
+        ]
       },
       {
+        "id": 9,
         "title": "Default Driving Mode",
         "description": "تعيين وضع القيادة الافتراضي عند بدء تشغيل السيارة.",
         "category": "وضع القيادة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/a29fd63d2f5ac00386477960dd2cb340_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/a29fd63d2f5ac00386477960dd2cb340_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. البحث عن إعداد وضع القيادة الافتراضي.",
+          "3. ضبط الوضع المطلوب (مثل Sport أو Comfort).",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 10,
         "title": "Horn on Secure",
         "description": "تفعيل صوت البوق عند قفل السيارة.",
         "category": "الراحة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/ec3ea21397f01a38cfacfec8a45f86e0_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/ec3ea21397f01a38cfacfec8a45f86e0_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن معلمة 'Akustische_Verriegelungsbestaetigung'.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 11,
         "title": "TPMS Pressure and Temperature Display",
         "description": "عرض ضغط ودرجة حرارة الإطارات في شاشة النظام.",
         "category": "العرض",
         "price": "110",
-        "image_url": "https://storage.obdeleven.com/parse/750b6938e0867d44071bbc032182c8cd_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/750b6938e0867d44071bbc032182c8cd_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات TPMS.",
+          "3. تفعيل خيار عرض الضغط ودرجة الحرارة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 12,
         "title": "iDrive Warnings",
         "description": "تخصيص أو إيقاف تحذيرات iDrive.",
         "category": "العرض",
         "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/66b0c574cd714768234e1a7a15d798cb_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/66b0c574cd714768234e1a7a15d798cb_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات التحذيرات.",
+          "3. تخصيص التحذيرات المطلوبة أو إلغاء تنشيطها.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 13,
         "title": "Front Fog Lights w/ High Beams",
         "description": "تفعيل المصابيح الأمامية للضباب مع الأضواء العالية.",
         "category": "الإضاءة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/a06b85fa78830e85946ef8354f02a95c_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/a06b85fa78830e85946ef8354f02a95c_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات مصابيح الضباب.",
+          "3. تفعيل العمل مع الأضواء العالية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 14,
         "title": "Front Fog Lights w/ Parking Lights",
         "description": "تفعيل المصابيح الأمامية للضباب مع أضواء الوقوف.",
         "category": "الإضاءة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/d5b143538118c4617d57ca691c004a75_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/d5b143538118c4617d57ca691c004a75_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات مصابيح الضباب.",
+          "3. تفعيل العمل مع أضواء الوقوف.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 15,
         "title": "Sport+ Mode",
         "description": "تفعيل وضع Sport+ للقيادة الرياضية المعززة.",
         "category": "وضع القيادة",
         "price": "150",
-        "image_url": "https://storage.obdeleven.com/parse/c75546901cd815e8400b4c9e57c8fbda_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c75546901cd815e8400b4c9e57c8fbda_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. البحث عن إعدادات أوضاع القيادة.",
+          "3. تفعيل وضع Sport+.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 16,
         "title": "X-View Display",
         "description": "تفعيل عرض X-View في شاشة العدادات (معلومات الطرق الوعرة).",
         "category": "العرض",
         "price": "140",
-        "image_url": "https://storage.obdeleven.com/parse/95a01cce6a9a4153c2482bbf90f114c9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/95a01cce6a9a4153c2482bbf90f114c9_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات العرض.",
+          "3. تفعيل خيار X-View.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 17,
         "title": "Tire Pressure Display in Dashboard",
         "description": "عرض ضغط الإطارات مباشرة في لوحة العدادات.",
         "category": "العرض",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/0834629027df2df27c0cadcf82a7331c_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/0834629027df2df27c0cadcf82a7331c_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات عرض ضغط الإطارات.",
+          "3. تفعيل العرض في لوحة العدادات.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 18,
         "title": "Speedometer Scale Display",
         "description": "عرض مقياس السرعة بتصميمات إضافية.",
         "category": "العرض",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/7ce0f6abb9b268656316bc71ee153735_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/7ce0f6abb9b268656316bc71ee153735_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات مقياس السرعة.",
+          "3. تفعيل التصميمات الإضافية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 19,
         "title": "Alpina Style Display",
         "description": "تفعيل نمط عرض Alpina في لوحة العدادات.",
         "category": "العرض",
         "price": "160",
-        "image_url": "https://storage.obdeleven.com/parse/c873e490b1314a701f9bf13f0d73450d_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c873e490b1314a701f9bf13f0d73450d_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن نمط العرض.",
+          "3. تفعيل نمط Alpina.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 20,
         "title": "RLS Sensitivity",
         "description": "تعديل حساسية مستشعر المطر والضوء.",
         "category": "الإضاءة",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/2e9a187ad3e4975457c828d32b265d00_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/2e9a187ad3e4975457c828d32b265d00_oca_picture.jpg",
+        "ecu": "FRM",
+        "steps": [
+          "1. الدخول إلى وحدة FRM.",
+          "2. البحث عن إعدادات حساسية مستشعر المطر/الضوء (RLS).",
+          "3. تعديل القيمة إلى المستوى المطلوب.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 21,
         "title": "Seats Heating/Cooling Memory",
         "description": "تفعيل ذاكرة تسخين/تبريد المقاعد.",
         "category": "الراحة",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/3bc5584b31e29dafb299a32a307548c1_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/3bc5584b31e29dafb299a32a307548c1_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات ذاكرة المقاعد.",
+          "3. تفعيل وظيفة ذاكرة التسخين/التبريد.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 22,
         "title": "Self Locking Time",
         "description": "تعديل وقت القفل التلقائي للأبواب.",
         "category": "الراحة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/017f0cfdfafb6470f1d675974345b4b9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/017f0cfdfafb6470f1d675974345b4b9_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات القفل التلقائي.",
+          "3. تعديل الوقت إلى القيمة المطلوبة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 23,
         "title": "Power Front Windows Safety",
         "description": "تعديل حساسية نظام أمان النوافذ الأمامية.",
         "category": "الراحة",
         "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/2605b25bfe3bf986a09a12dd6ccbafe2_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/2605b25bfe3bf986a09a12dd6ccbafe2_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات أمان النوافذ.",
+          "3. تعديل مستوى الحساسية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 24,
         "title": "Emergency Braking Lights",
         "description": "تفعيل أضواء الفرامل الوامضة في حالات الفرملة الطارئة.",
         "category": "الإضاءة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/b550b5057a30ee8204ffd16ec8a730e9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/b550b5057a30ee8204ffd16ec8a730e9_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات أضواء الفرامل.",
+          "3. تفعيل وظيفة الوميض عند الفرملة الطارئة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 25,
         "title": "LED License Plate Lights",
         "description": "تعديل إعدادات أضواء لوحة الترخيص LED.",
         "category": "الإضاءة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/be7c9596369c14bf9a35bce7a9634dff_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/be7c9596369c14bf9a35bce7a9634dff_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات أضواء لوحة الترخيص.",
+          "3. تعديل الإعدادات للتعامل مع أضواء LED.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 26,
         "title": "Assisted Driving View",
         "description": "تفعيل عرض مساعدة القيادة في الشاشة.",
         "category": "مساعدة السائق",
         "price": "130",
-        "image_url": "https://storage.obdeleven.com/parse/164733e1175a7eab139864fbfd94e301_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/164733e1175a7eab139864fbfd94e301_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات عرض مساعدة القيادة.",
+          "3. تفعيل العرض.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 27,
         "title": "Acoustic Unlock Confirmation",
         "description": "تفعيل صوت تأكيد فتح الأبواب.",
         "category": "الراحة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/daad8bd4bd769adee75ba9f287b93766_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/daad8bd4bd769adee75ba9f287b93766_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن معلمة 'Akustische_Entriegelungsbestaetigung'.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 28,
         "title": "Automatic Lane Change",
         "description": "تفعيل وظيفة تغيير المسار التلقائي.",
         "category": "مساعدة السائق",
         "price": "180",
-        "image_url": "https://storage.obdeleven.com/parse/fcd9a3378aa7aa47880fbcd7704588d5_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/fcd9a3378aa7aa47880fbcd7704588d5_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات مساعدة السائق.",
+          "3. تفعيل وظيفة تغيير المسار التلقائي (يتطلب تجهيزات مساعدة السائق المتقدمة).",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 29,
         "title": "Bower & Wilkins Audio",
         "description": "تفعيل إعدادات صوت Bower & Wilkins (إذا كان النظام متوفرًا).",
         "category": "الصوت",
         "price": "200",
-        "image_url": "https://storage.obdeleven.com/parse/3acc77e1efe3590de5374403c43c7431_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/3acc77e1efe3590de5374403c43c7431_oca_picture.jpg",
+        "ecu": "RAM",
+        "steps": [
+          "1. الدخول إلى وحدة RAM (وحدة الصوت).",
+          "2. البحث عن إعدادات نظام الصوت.",
+          "3. تفعيل أو ضبط إعدادات Bower & Wilkins.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 30,
         "title": "12V Battery Registration",
         "description": "تسجيل بطارية 12 فولت جديدة.",
         "category": "الصيانة",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/9caeb45c0000578cee2c94f4dc644983_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/9caeb45c0000578cee2c94f4dc644983_oca_picture.jpg",
+        "ecu": "JBBF",
+        "steps": [
+          "1. الدخول إلى وحدة JBBF (صندوق التوصيل الأمامي).",
+          "2. تنفيذ وظيفة تسجيل البطارية الجديدة.",
+          "3. تأكيد التسجيل."
+        ]
       },
       {
+        "id": 31,
         "title": "Engine Sound Menu",
         "description": "تفعيل قائمة إعدادات صوت المحرك.",
         "category": "الصوت",
         "price": "110",
-        "image_url": "https://storage.obdeleven.com/parse/a28d870764ebd97ea21cce79475e45cf_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/a28d870764ebd97ea21cce79475e45cf_oca_picture.jpg",
+        "ecu": "ASD",
+        "steps": [
+          "1. الدخول إلى وحدة ASD (تصميم الصوت النشط).",
+          "2. البحث عن إعدادات قائمة صوت المحرك.",
+          "3. تفعيل القائمة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 32,
         "title": "Instrument Cluster Logo",
         "description": "تغيير شعار لوحة العدادات.",
         "category": "العرض",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/9281fcbd489723b44ffb99ea3f40e912_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/9281fcbd489723b44ffb99ea3f40e912_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعداد شعار لوحة العدادات.",
+          "3. تحديد الشعار المطلوب.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 33,
         "title": "Automatic Steering Wheel Heating",
         "description": "تفعيل التسخين التلقائي لعجلة القيادة.",
         "category": "الراحة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/fa73e81d4d099184693965f006cedf88_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/fa73e81d4d099184693965f006cedf88_oca_picture.jpg",
+        "ecu": "SZL",
+        "steps": [
+          "1. الدخول إلى وحدة SZL (مركز تبديل التوجيه).",
+          "2. البحث عن إعدادات تدفئة عجلة القيادة.",
+          "3. تفعيل التسخين التلقائي.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 34,
         "title": "Ambient Lighting Instead of Bronze",
         "description": "تغيير لون الإضاءة المحيطة من البرونزي.",
         "category": "الإضاءة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/2f4d0c62ee132453ff0bced6d80618c8_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/2f4d0c62ee132453ff0bced6d80618c8_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن إعدادات الإضاءة المحيطة.",
+          "3. تغيير اللون الافتراضي من البرونزي.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 35,
         "title": "Ambient Color Instead of Bronze",
         "description": "تغيير لون الإضاءة المحيطة من البرونزي.",
         "category": "الإضاءة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/26e104be19815c2325202b469119bac7_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/26e104be19815c232502b469119bac7_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن إعدادات الإضاءة المحيطة.",
+          "3. تغيير اللون الافتراضي من البرونزي.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 36,
         "title": "Rain Closing",
         "description": "إغلاق النوافذ وفتحة السقف تلقائيًا عند استشعار المطر.",
         "category": "الراحة",
         "price": "120",
-        "image_url": "https://storage.obdeleven.com/parse/36d4dc3fa8e848c0d6a2f74f26733a39_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/36d4dc3fa8e848c0d6a2f74f26733a39_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن معلمة 'Regenschliessen'.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 37,
         "title": "Scandinavian DRLs",
         "description": "تفعيل أضواء النهار الاسكندنافية.",
         "category": "الإضاءة",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/8722d3c8cc595754444c10f2b88896c9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/8722d3c8cc595754444c10f2b88896c9_oca_picture.jpg",
+        "ecu": "FRM",
+        "steps": [
+          "1. الدخول إلى وحدة FRM.",
+          "2. البحث عن إعدادات DRLs (أضواء القيادة النهارية).",
+          "3. تفعيل نمط أضواء النهار الاسكندنافية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 38,
         "title": "M View Cluster Logo",
         "description": "تفعيل شعار M في لوحة العدادات بنمط العرض M.",
         "category": "العرض",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/8b5fe8386d999b366f513f18496d7230_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/8b5fe8386d999b366f513f18496d7230_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعداد شعار لوحة العدادات.",
+          "3. تحديد شعار M View.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 39,
         "title": "Rear Seat Belts Reminder Menu",
         "description": "تفعيل قائمة تذكير أحزمة الأمان للمقاعد الخلفية.",
         "category": "السلامة",
         "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/5c692f5330b674a618b7afa3604add04_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/5c692f5330b674a618b7afa3604add04_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات تذكير أحزمة الأمان.",
+          "3. تفعيل قائمة المقاعد الخلفية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 40,
         "title": "Active Sound Design Deactivation",
         "description": "إلغاء تنشيط نظام الصوت النشط (ASD).",
         "category": "الصوت",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/159a4022221dacd99df5556dead2d5bb_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/159a4022221dacd99df5556dead2d5bb_oca_picture.jpg",
+        "ecu": "ASD",
+        "steps": [
+          "1. الدخول إلى وحدة ASD (تصميم الصوت النشط).",
+          "2. البحث عن معلمة 'ASD_Deaktivierung'.",
+          "3. تغيير القيمة إلى 'aktiv' أو 'deaktiviert' حسب الرغبة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 41,
         "title": "ECO PRO Coasting Mode",
         "description": "تفعيل وضع الانزلاق في ECO PRO.",
         "category": "وضع القيادة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/40b747b342a0e62a4cb41e010cbd8b3c_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/40b747b342a0e62a4cb41e010cbd8b3c_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. البحث عن إعدادات ECO PRO.",
+          "3. تفعيل وضع الانزلاق (Coasting).",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 42,
         "title": "Comfort+ Mode",
         "description": "تفعيل وضع Comfort+.",
         "category": "وضع القيادة",
         "price": "130",
-        "image_url": "https://storage.obdeleven.com/parse/c4e5ef27ac26d52bc4fc01c0be79da6e_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c4e5ef27ac26d52bc4fc01c0be79da6e_oca_picture.jpg",
+        "ecu": "ICM",
+        "steps": [
+          "1. الدخول إلى وحدة ICM.",
+          "2. البحث عن إعدادات وضع القيادة.",
+          "3. تفعيل وضع Comfort+.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 43,
         "title": "Brake Lights Test",
         "description": "اختبار أضواء الفرامل.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/79c83239c057fff25d0ffc0290e44f83_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/79c83239c057fff25d0ffc0290e44f83_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار أضواء الفرامل من قائمة التشخيص.",
+          "3. التحقق من عمل الأضواء."
+        ]
       },
       {
+        "id": 44,
         "title": "Reversing Lights Test",
         "description": "اختبار أضواء الرجوع للخلف.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/44ecec72499c9f1c68a9bbd6381c4577_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/44ecec72499c9f1c68a9bbd6381c4577_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار أضواء الرجوع للخلف من قائمة التشخيص.",
+          "3. التحقق من عمل الأضواء."
+        ]
       },
       {
+        "id": 45,
         "title": "Windscreen Washer Pump Test",
         "description": "اختبار مضخة غسيل الزجاج الأمامي.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/98e61f5539a545cfede9847ac8f79d3a_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/98e61f5539a545cfede9847ac8f79d3a_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار مضخة غسيل الزجاج الأمامي.",
+          "3. التحقق من عمل المضخة."
+        ]
       },
       {
+        "id": 46,
         "title": "Radiator Blind Opening and Closing ",
         "description": "اختبار فتح وإغلاق ستارة المبرد.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/191ec48271def6879338a979daa8a382_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/191ec48271def6879338a979daa8a382_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. تنفيذ اختبار ستارة المبرد.",
+          "3. التحقق من عملها."
+        ]
       },
       {
+        "id": 47,
         "title": "Steering Wheel Vibration Test",
         "description": "اختبار اهتزاز عجلة القيادة.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/05671bc403200ee80861cd573d2f049b_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/05671bc403200ee80861cd573d2f049b_oca_picture.jpg",
+        "ecu": "ICM",
+        "steps": [
+          "1. الدخول إلى وحدة ICM.",
+          "2. تنفيذ اختبار اهتزاز عجلة القيادة.",
+          "3. التحقق من عمل الاهتزاز."
+        ]
       },
       {
+        "id": 48,
         "title": "Engine Fan Test",
         "description": "اختبار مروحة المحرك.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/695fd1be4b24dfd3b5222090d16f520a_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/695fd1be4b24dfd3b5222090d16f520a_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. تنفيذ اختبار مروحة المحرك.",
+          "3. التحقق من عمل المروحة."
+        ]
       },
       {
+        "id": 49,
         "title": "Horn Test",
         "description": "اختبار البوق.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/25004774a9c5fa633d3660c65c76ece0_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/25004774a9c5fa633d3660c65c76ece0_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. تنفيذ اختبار البوق.",
+          "3. التحقق من عمل البوق."
+        ]
       },
       {
+        "id": 50,
         "title": "Rear Fog Lights Test",
         "description": "اختبار أضواء الضباب الخلفية.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/91efcacfe9b197171c786f359ca28c20_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/91efcacfe9b17171c786f359ca28c20_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار أضواء الضباب الخلفية.",
+          "3. التحقق من عمل الأضواء."
+        ]
       },
       {
+        "id": 51,
         "title": "Headlights Check",
         "description": "فحص المصابيح الأمامية.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/f0169c9a66aeaa3564a54473b65c9039_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/f0169c9a66aeaa3564a54473b65c9039_oca_picture.jpg",
+        "ecu": "FRM",
+        "steps": [
+          "1. الدخول إلى وحدة FRM.",
+          "2. تنفيذ فحص شامل للمصابيح الأمامية.",
+          "3. التحقق من عمل جميع أجزاء المصابيح."
+        ]
       },
       {
+        "id": 52,
         "title": "Instrument Cluster Lights Test",
         "description": "اختبار أضواء لوحة العدادات.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/06b677511a8683a43e283a03c7bb6f50_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/06b677511a8683a43e283a03c7bb6f50_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. تنفيذ اختبار أضواء لوحة العدادات.",
+          "3. التحقق من إضاءة جميع المؤشرات."
+        ]
       },
       {
+        "id": 53,
         "title": "SOS Emergency Call System",
         "description": "فحص نظام الاتصال الطارئ SOS.",
         "category": "السلامة",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/63c12ebda4e28525f79ced7e43280430_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/63c12ebda4e28525f79ced7e43280430_oca_picture.jpg",
+        "ecu": "TELEMATIK",
+        "steps": [
+          "1. الدخول إلى وحدة TELEMATIK.",
+          "2. تنفيذ فحص لنظام SOS.",
+          "3. التأكد من جاهزية النظام."
+        ]
       },
       {
+        "id": 54,
         "title": "Brake Fluid Reset",
         "description": "إعادة ضبط سائل الفرامل.",
         "category": "الصيانة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/b54f3a14eb0d261c6fcb72bb2ca76507_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/b54f3a14eb0d261c6fcb72bb2ca76507_oca_picture.jpg",
+        "ecu": "DSC",
+        "steps": [
+          "1. الدخول إلى وحدة DSC.",
+          "2. تنفيذ وظيفة إعادة ضبط سائل الفرامل.",
+          "3. تأكيد إعادة الضبط."
+        ]
       },
       {
+        "id": 55,
         "title": "Engine Oil Reset",
         "description": "إعادة ضبط زيت المحرك.",
         "category": "الصيانة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/a4928157214fe0311f38de63854ff1cd_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/a4928157214fe0311f38de63854ff1cd_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. تنفيذ وظيفة إعادة ضبط زيت المحرك.",
+          "3. تأكيد إعادة الضبط."
+        ]
       },
       {
+        "id": 56,
         "title": "Front Brake Pads Reset",
         "description": "إعادة ضبط تيل الفرامل الأمامية.",
         "category": "الصيانة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/e404e4d551c5f55da70f2fbaa034f0ee_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/e404e4d551c5f55da70f2fbaa034f0ee_oca_picture.jpg",
+        "ecu": "DSC",
+        "steps": [
+          "1. الدخول إلى وحدة DSC.",
+          "2. تنفيذ وظيفة إعادة ضبط تيل الفرامل الأمامية.",
+          "3. تأكيد إعادة الضبط."
+        ]
       },
       {
+        "id": 57,
         "title": "Rear Brake Pads Reset",
         "description": "إعادة ضبط تيل الفرامل الخلفية.",
         "category": "الصيانة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/daa9554fbda4dbb659e12c6dcd6a5e86_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/daa9554fbda4dbb659e12c6dcd6a5e86_oca_picture.jpg",
+        "ecu": "DSC",
+        "steps": [
+          "1. الدخول إلى وحدة DSC.",
+          "2. تنفيذ وظيفة إعادة ضبط تيل الفرامل الخلفية.",
+          "3. تأكيد إعادة الضبط."
+        ]
       },
       {
+        "id": 58,
         "title": "Vehicle Check Reset",
         "description": "إعادة ضبط فحص السيارة.",
         "category": "الصيانة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/b7ce4b499333c3aeb4fcaa413683e3c0_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/b7ce4b499333c3aeb4fcaa413683e3c0_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. تنفيذ وظيفة إعادة ضبط فحص السيارة.",
+          "3. تأكيد إعادة الضبط."
+        ]
       },
       {
+        "id": 59,
         "title": "Sport Displays",
         "description": "تفعيل شاشات العرض الرياضية.",
         "category": "العرض",
         "price": "110",
-        "image_url": "https://storage.obdeleven.com/parse/503c60d9d59f49ee5fe65487b9e80038_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/503c60d9d59f49ee5fe65487b9e80038_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات العرض.",
+          "3. تفعيل شاشات الأداء الرياضي.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 60,
         "title": "Video in Motion",
         "description": "تفعيل تشغيل الفيديو أثناء القيادة.",
         "category": "الترفيه",
         "price": "180",
-        "image_url": "https://storage.obdeleven.com/parse/edf807d20d731007d9bf380b7c28e886_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/edf807d20d731007d9bf380b7c28e886_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات الفيديو.",
+          "3. تفعيل خيار تشغيل الفيديو أثناء الحركة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 61,
         "title": "Tow Hitch Display",
         "description": "تفعيل عرض معلومات وصلة الجر.",
         "category": "العرض",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/4aeff12b62f3fbace5e8613285232f68_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/4aeff12b62f3fbace5e8613285232f68_oca_picture.jpg",
+        "ecu": "TRM",
+        "steps": [
+          "1. الدخول إلى وحدة TRM (وحدة مقطورة).",
+          "2. البحث عن إعدادات وصلة الجر.",
+          "3. تفعيل عرض المعلومات.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 62,
         "title": "Comfort Operation via CA",
         "description": "تفعيل وظائف الراحة عبر نظام الوصول المريح (Comfort Access).",
         "category": "الراحة",
         "price": "120",
-        "image_url": "https://storage.obdeleven.com/parse/16ac1f179b8edc90c11b1fefbb611c33_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/16ac1f179b8edc90c11b1fefbb611c33_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات Comfort Access.",
+          "3. تفعيل وظائف الراحة (مثل فتح/إغلاق النوافذ).",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 63,
         "title": "Sport Displays Color",
         "description": "تغيير لون شاشات العرض الرياضية.",
         "category": "العرض",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/45f535c8fd75cdbea9656621b9a3a7c9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/45f535c8fd75cdbea9656621b9a3a7c9_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات شاشات العرض الرياضية.",
+          "3. تغيير اللون.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 64,
         "title": "Maximum Volume",
         "description": "تعديل مستوى الصوت الأقصى.",
         "category": "الصوت",
         "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/d4a8c7d87179af7df7f76789b3d6ae91_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/d4a8c7d87179af7df7f76789b3d6ae91_oca_picture.jpg",
+        "ecu": "RAM",
+        "steps": [
+          "1. الدخول إلى وحدة RAM (وحدة الصوت).",
+          "2. البحث عن إعدادات مستوى الصوت.",
+          "3. تعديل القيمة القصوى للصوت.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 65,
         "title": "NBT EVO Menu Style",
         "description": "تغيير نمط قائمة NBT EVO.",
         "category": "العرض",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/265862d2f2fdcd1ae6689152080e9f8d_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/265862d2f2fdcd1ae6689152080e9f8d_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات نمط القائمة.",
+          "3. تفعيل نمط NBT EVO.",
+          "4. حفظ التغييرات."
+        ]
       }
     ]
   },
   {
     "model": "1-series",
-    "year": "2019-present",
+    "year": "2019-2025",
     "generation": "f40",
     "activations": [
       {
+        "id": 1,
         "title": "تفعيل وضع الرياضة الفردي",
-        "description": "تفعيل إمكانية تخصيص وضع القيادة الرياضية حسب تفضيلاتك الشخصية",
+        "description": "تفعيل إمكانية تخصيص وضع القيادة الرياضية حسب تفضيلاتك الشخصية.",
         "category": "وضع القيادة",
-        "price": "120"
+        "price": "120",
+        "ecu": "ICM",
+        "steps": [
+          "1. الدخول إلى وحدة ICM.",
+          "2. البحث عن معلمة وضع القيادة الرياضية الفردي.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 2,
         "title": "تفعيل إغلاق النوافذ من المفتاح",
-        "description": "إمكانية إغلاق جميع النوافذ عن طريق الضغط المطول على زر القفل في المفتاح",
+        "description": "إمكانية إغلاق جميع النوافذ عن طريق الضغط المطول على زر القفل في المفتاح.",
         "category": "الراحة",
-        "price": "80"
+        "price": "80",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن وظيفة إغلاق النوافذ بالمفتاح.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 3,
         "title": "تفعيل وظيفة الترحيب الضوئي",
-        "description": "إضاءة المصابيح بنمط خاص عند فتح السيارة",
+        "description": "إضاءة المصابيح بنمط خاص عند فتح السيارة.",
         "category": "الإضاءة",
-        "price": "100"
+        "price": "100",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات الترحيب الضوئي.",
+          "3. تفعيل النمط المطلوب وحفظ التغييرات."
+        ]
       },
       {
+        "id": 4,
         "title": "5 Times Comfort Turn Signals",
         "description": "تفعيل وميض إشارة الانعطاف 5 مرات بضغطة واحدة.",
         "category": "الإضاءة",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/0e66d343c0e35fd1b560772027d43d62_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/0e66d343c0e35fd1b560772027d43d62_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن معلمة 'Blinkzyklen_Komfortblinken'.",
+          "3. تغيير القيمة إلى '5'.",
+          "4. حفظ التغييرات وتشفير الوحدة."
+        ]
       },
       {
+        "id": 5,
         "title": "M Logo Startup Animation",
         "description": "تغيير رسوم بدء التشغيل على شاشة iDrive إلى شعار M.",
         "category": "العرض",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/c6084ab451c88bc8ef157eb3c16c83d8_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c6084ab451c88bc8ef157eb3c16c83d8_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعداد رسوم بدء التشغيل.",
+          "3. تحديد شعار M Performance.",
+          "4. حفظ التغييرات وإعادة تشغيل iDrive."
+        ]
       },
       {
+        "id": 6,
         "title": "M View Style Cluster",
         "description": "تفعيل نمط عرض M في لوحة العدادات.",
         "category": "العرض",
         "price": "120",
-        "image_url": "https://storage.obdeleven.com/parse/f8030b56910a732fe26c7d2fc3a6e2a9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/f8030b56910a732fe26c7d2fc3a6e2a9_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعداد نمط العرض.",
+          "3. تحديد نمط M View.",
+          "4. حفظ التغييرات وإعادة تشغيل iDrive."
+        ]
       },
       {
+        "id": 7,
         "title": "Default Driving Mode",
         "description": "تعيين وضع القيادة الافتراضي عند بدء تشغيل السيارة.",
         "category": "وضع القيادة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/a29fd63d2f5ac00386477960dd2cb340_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/a29fd63d2f5ac00386477960dd2cb340_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. البحث عن إعداد وضع القيادة الافتراضي.",
+          "3. ضبط الوضع المطلوب (مثل Sport أو Comfort).",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 8,
         "title": "Horn on Secure",
         "description": "تفعيل صوت البوق عند قفل السيارة.",
         "category": "الراحة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/ec3ea21397f01a38cfacfec8a45f86e0_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/ec3ea21397f01a38cfacfec8a45f86e0_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن معلمة 'Akustische_Verriegelungsbestaetigung'.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 9,
         "title": "TPMS Pressure and Temperature Display",
         "description": "عرض ضغط ودرجة حرارة الإطارات في شاشة النظام.",
         "category": "العرض",
         "price": "110",
-        "image_url": "https://storage.obdeleven.com/parse/750b6938e0867d44071bbc032182c8cd_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/750b6938e0867d44071bbc032182c8cd_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات TPMS.",
+          "3. تفعيل خيار عرض الضغط ودرجة الحرارة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 10,
         "title": "iDrive Warnings",
         "description": "تخصيص أو إيقاف تحذيرات iDrive.",
         "category": "العرض",
         "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/66b0c574cd714768234e1a7a15d798cb_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/66b0c574cd714768234e1a7a15d798cb_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات التحذيرات.",
+          "3. تخصيص التحذيرات المطلوبة أو إلغاء تنشيطها.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 11,
         "title": "Front Fog Lights w/ High Beams",
         "description": "تفعيل المصابيح الأمامية للضباب مع الأضواء العالية.",
         "category": "الإضاءة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/a06b85fa78830e85946ef8354f02a95c_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/a06b85fa78830e85946ef8354f02a95c_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات مصابيح الضباب.",
+          "3. تفعيل العمل مع الأضواء العالية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 12,
         "title": "Front Fog Lights w/ Parking Lights",
         "description": "تفعيل المصابيح الأمامية للضباب مع أضواء الوقوف.",
         "category": "الإضاءة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/d5b143538118c4617d57ca691c004a75_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/d5b143538118c4617d57ca691c004a75_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات مصابيح الضباب.",
+          "3. تفعيل العمل مع أضواء الوقوف.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 13,
         "title": "Sport+ Mode",
         "description": "تفعيل وضع Sport+ للقيادة الرياضية المعززة.",
         "category": "وضع القيادة",
         "price": "150",
-        "image_url": "https://storage.obdeleven.com/parse/c75546901cd815e8400b4c9e57c8fbda_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c75546901cd815e8400b4c9e57c8fbda_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. البحث عن إعدادات أوضاع القيادة.",
+          "3. تفعيل وضع Sport+.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 14,
         "title": "X-View Display",
         "description": "تفعيل عرض X-View في شاشة العدادات (معلومات الطرق الوعرة).",
         "category": "العرض",
         "price": "140",
-        "image_url": "https://storage.obdeleven.com/parse/95a01cce6a9a4153c2482bbf90f114c9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/95a01cce6a9a4153c2482bbf90f114c9_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات العرض.",
+          "3. تفعيل خيار X-View.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 15,
         "title": "Tire Pressure Display in Dashboard",
         "description": "عرض ضغط الإطارات مباشرة في لوحة العدادات.",
         "category": "العرض",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/0834629027df2df27c0cadcf82a7331c_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/0834629027df2df27c0cadcf82a7331c_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات عرض ضغط الإطارات.",
+          "3. تفعيل العرض في لوحة العدادات.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 16,
         "title": "Speedometer Scale Display",
         "description": "عرض مقياس السرعة بتصميمات إضافية.",
         "category": "العرض",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/7ce0f6abb9b268656316bc71ee153735_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/7ce0f6abb9b268656316bc71ee153735_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات مقياس السرعة.",
+          "3. تفعيل التصميمات الإضافية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 17,
         "title": "Alpina Style Display",
         "description": "تفعيل نمط عرض Alpina في لوحة العدادات.",
         "category": "العرض",
         "price": "160",
-        "image_url": "https://storage.obdeleven.com/parse/c873e490b1314a701f9bf13f0d73450d_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c873e490b1314a701f9bf13f0d73450d_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن نمط العرض.",
+          "3. تفعيل نمط Alpina.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 18,
         "title": "RLS Sensitivity",
         "description": "تعديل حساسية مستشعر المطر والضوء.",
         "category": "الإضاءة",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/2e9a187ad3e4975457c828d32b265d00_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/2e9a187ad3e4975457c828d32b265d00_oca_picture.jpg",
+        "ecu": "FRM",
+        "steps": [
+          "1. الدخول إلى وحدة FRM.",
+          "2. البحث عن إعدادات حساسية مستشعر المطر/الضوء (RLS).",
+          "3. تعديل القيمة إلى المستوى المطلوب.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 19,
         "title": "Seats Heating/Cooling Memory",
         "description": "تفعيل ذاكرة تسخين/تبريد المقاعد.",
         "category": "الراحة",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/3bc5584b31e29dafb299a32a307548c1_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/3bc5584b31e29dafb299a32a307548c1_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات ذاكرة المقاعد.",
+          "3. تفعيل وظيفة ذاكرة التسخين/التبريد.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 20,
         "title": "Self Locking Time",
         "description": "تعديل وقت القفل التلقائي للأبواب.",
         "category": "الراحة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/017f0cfdfafb6470f1d675974345b4b9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/017f0cfdfafb6470f1d675974345b4b9_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات القفل التلقائي.",
+          "3. تعديل الوقت إلى القيمة المطلوبة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 21,
         "title": "Power Front Windows Safety",
         "description": "تعديل حساسية نظام أمان النوافذ الأمامية.",
         "category": "الراحة",
         "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/2605b25bfe3bf986a09a12dd6ccbafe2_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/2605b25bfe3bf986a09a12dd6ccbafe2_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات أمان النوافذ.",
+          "3. تعديل مستوى الحساسية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 22,
         "title": "Emergency Braking Lights",
         "description": "تفعيل أضواء الفرامل الوامضة في حالات الفرملة الطارئة.",
         "category": "الإضاءة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/b550b5057a30ee8204ffd16ec8a730e9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/b550b5057a30ee8204ffd16ec8a730e9_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات أضواء الفرامل.",
+          "3. تفعيل وظيفة الوميض عند الفرملة الطارئة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 23,
         "title": "LED License Plate Lights",
         "description": "تعديل إعدادات أضواء لوحة الترخيص LED.",
         "category": "الإضاءة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/be7c9596369c14bf9a35bce7a9634dff_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/be7c9596369c14bf9a35bce7a9634dff_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن إعدادات أضواء لوحة الترخيص.",
+          "3. تعديل الإعدادات للتعامل مع أضواء LED.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 24,
         "title": "Assisted Driving View",
         "description": "تفعيل عرض مساعدة القيادة في الشاشة.",
         "category": "مساعدة السائق",
         "price": "130",
-        "image_url": "https://storage.obdeleven.com/parse/164733e1175a7eab139864fbfd94e301_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/164733e1175a7eab139864fbfd94e301_oca_picture.jpg",
+        "ecu": "HU_NBT",
+        "steps": [
+          "1. الدخول إلى وحدة HU_NBT.",
+          "2. البحث عن إعدادات عرض مساعدة القيادة.",
+          "3. تفعيل العرض.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 25,
         "title": "Acoustic Unlock Confirmation",
         "description": "تفعيل صوت تأكيد فتح الأبواب.",
         "category": "الراحة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/daad8bd4bd769adee75ba9f287b93766_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/daad8bd4bd769adee75ba9f287b93766_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن معلمة 'Akustische_Entriegelungsbestaetigung'.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 26,
         "title": "Automatic Lane Change",
         "description": "تفعيل وظيفة تغيير المسار التلقائي.",
         "category": "مساعدة السائق",
         "price": "180",
-        "image_url": "https://storage.obdeleven.com/parse/fcd9a3378aa7aa47880fbcd7704588d5_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/fcd9a3378aa7aa47880fbcd7704588d5_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات مساعدة السائق.",
+          "3. تفعيل وظيفة تغيير المسار التلقائي (يتطلب تجهيزات مساعدة السائق المتقدمة).",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 27,
         "title": "Bower & Wilkins Audio",
         "description": "تفعيل إعدادات صوت Bower & Wilkins (إذا كان النظام متوفرًا).",
         "category": "الصوت",
         "price": "200",
-        "image_url": "https://storage.obdeleven.com/parse/3acc77e1efe3590de5374403c43c7431_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/3acc77e1efe3590de5374403c43c7431_oca_picture.jpg",
+        "ecu": "RAM",
+        "steps": [
+          "1. الدخول إلى وحدة RAM (وحدة الصوت).",
+          "2. البحث عن إعدادات نظام الصوت.",
+          "3. تفعيل أو ضبط إعدادات Bower & Wilkins.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 28,
         "title": "12V Battery Registration",
         "description": "تسجيل بطارية 12 فولت جديدة.",
         "category": "الصيانة",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/9caeb45c0000578cee2c94f4dc644983_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/9caeb45c0000578cee2c94f4dc644983_oca_picture.jpg",
+        "ecu": "JBBF",
+        "steps": [
+          "1. الدخول إلى وحدة JBBF (صندوق التوصيل الأمامي).",
+          "2. تنفيذ وظيفة تسجيل البطارية الجديدة.",
+          "3. تأكيد التسجيل."
+        ]
       },
       {
+        "id": 29,
         "title": "Engine Sound Menu",
         "description": "تفعيل قائمة إعدادات صوت المحرك.",
         "category": "الصوت",
         "price": "110",
-        "image_url": "https://storage.obdeleven.com/parse/a28d870764ebd97ea21cce79475e45cf_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/a28d870764ebd97ea21cce79475e45cf_oca_picture.jpg",
+        "ecu": "ASD",
+        "steps": [
+          "1. الدخول إلى وحدة ASD (تصميم الصوت النشط).",
+          "2. البحث عن إعدادات قائمة صوت المحرك.",
+          "3. تفعيل القائمة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 30,
         "title": "Instrument Cluster Logo",
         "description": "تغيير شعار لوحة العدادات.",
         "category": "العرض",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/9281fcbd489723b44ffb99ea3f40e912_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/9281fcbd489723b44ffb99ea3f40e912_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعداد شعار لوحة العدادات.",
+          "3. تحديد الشعار المطلوب.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 31,
         "title": "Automatic Steering Wheel Heating",
         "description": "تفعيل التسخين التلقائي لعجلة القيادة.",
         "category": "الراحة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/fa73e81d4d099184693965f006cedf88_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/fa73e81d4d099184693965f006cedf88_oca_picture.jpg",
+        "ecu": "SZL",
+        "steps": [
+          "1. الدخول إلى وحدة SZL (مركز تبديل التوجيه).",
+          "2. البحث عن إعدادات تدفئة عجلة القيادة.",
+          "3. تفعيل التسخين التلقائي.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 32,
         "title": "Ambient Lighting Instead of Bronze",
         "description": "تغيير لون الإضاءة المحيطة من البرونزي.",
         "category": "الإضاءة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/2f4d0c62ee132453ff0bced6d80618c8_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/2f4d0c62ee132453ff0bced6d80618c8_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن إعدادات الإضاءة المحيطة.",
+          "3. تغيير اللون الافتراضي من البرونزي.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 33,
         "title": "Ambient Color Instead of Bronze",
         "description": "تغيير لون الإضاءة المحيطة من البرونزي.",
         "category": "الإضاءة",
         "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/26e104be19815c2325202b469119bac7_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/26e104be19815c232502b469119bac7_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. البحث عن إعدادات الإضاءة المحيطة.",
+          "3. تغيير اللون الافتراضي من البرونزي.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 34,
         "title": "Rain Closing",
         "description": "إغلاق النوافذ وفتحة السقف تلقائيًا عند استشعار المطر.",
         "category": "الراحة",
         "price": "120",
-        "image_url": "https://storage.obdeleven.com/parse/36d4dc3fa8e848c0d6a2f74f26733a39_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/36d4dc3fa8e848c0d6a2f74f26733a39_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. البحث عن معلمة 'Regenschliessen'.",
+          "3. تفعيل الخيار وحفظ التغييرات."
+        ]
       },
       {
+        "id": 35,
         "title": "Scandinavian DRLs",
         "description": "تفعيل أضواء النهار الاسكندنافية.",
         "category": "الإضاءة",
         "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/8722d3c8cc595754444c10f2b88896c9_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/8722d3c8cc595754444c10f2b88896c9_oca_picture.jpg",
+        "ecu": "FRM",
+        "steps": [
+          "1. الدخول إلى وحدة FRM.",
+          "2. البحث عن إعدادات DRLs (أضواء القيادة النهارية).",
+          "3. تفعيل نمط أضواء النهار الاسكندنافية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 36,
         "title": "M View Cluster Logo",
         "description": "تفعيل شعار M في لوحة العدادات بنمط العرض M.",
         "category": "العرض",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/8b5fe8386d999b366f513f18496d7230_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/8b5fe8386d999b366f513f18496d7230_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعداد شعار لوحة العدادات.",
+          "3. تحديد شعار M View.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 37,
         "title": "Rear Seat Belts Reminder Menu",
         "description": "تفعيل قائمة تذكير أحزمة الأمان للمقاعد الخلفية.",
         "category": "السلامة",
         "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/5c692f5330b674a618b7afa3604add04_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/5c692f5330b674a618b7afa3604add04_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. البحث عن إعدادات تذكير أحزمة الأمان.",
+          "3. تفعيل قائمة المقاعد الخلفية.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 38,
         "title": "Active Sound Design Deactivation",
         "description": "إلغاء تنشيط نظام الصوت النشط (ASD).",
         "category": "الصوت",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/159a4022221dacd99df5556dead2d5bb_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/159a4022221dacd99df5556dead2d5bb_oca_picture.jpg",
+        "ecu": "ASD",
+        "steps": [
+          "1. الدخول إلى وحدة ASD (تصميم الصوت النشط).",
+          "2. البحث عن معلمة 'ASD_Deaktivierung'.",
+          "3. تغيير القيمة إلى 'aktiv' أو 'deaktiviert' حسب الرغبة.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 39,
         "title": "ECO PRO Coasting Mode",
         "description": "تفعيل وضع الانزلاق في ECO PRO.",
         "category": "وضع القيادة",
         "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/40b747b342a0e62a4cb41e010cbd8b3c_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/40b747b342a0e62a4cb41e010cbd8b3c_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. البحث عن إعدادات ECO PRO.",
+          "3. تفعيل وضع الانزلاق (Coasting).",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 40,
         "title": "Comfort+ Mode",
         "description": "تفعيل وضع Comfort+.",
         "category": "وضع القيادة",
         "price": "130",
-        "image_url": "https://storage.obdeleven.com/parse/c4e5ef27ac26d52bc4fc01c0be79da6e_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/c4e5ef27ac26d52bc4fc01c0be79da6e_oca_picture.jpg",
+        "ecu": "ICM",
+        "steps": [
+          "1. الدخول إلى وحدة ICM.",
+          "2. البحث عن إعدادات وضع القيادة.",
+          "3. تفعيل وضع Comfort+.",
+          "4. حفظ التغييرات."
+        ]
       },
       {
+        "id": 41,
         "title": "Brake Lights Test",
         "description": "اختبار أضواء الفرامل.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/79c83239c057fff25d0ffc0290e44f83_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/79c83239c057fff25d0ffc0290e44f83_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار أضواء الفرامل من قائمة التشخيص.",
+          "3. التحقق من عمل الأضواء."
+        ]
       },
       {
+        "id": 42,
         "title": "Reversing Lights Test",
         "description": "اختبار أضواء الرجوع للخلف.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/44ecec72499c9f1c68a9bbd6381c4577_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/44ecec72499c9f1c68a9bbd6381c4577_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار أضواء الرجوع للخلف من قائمة التشخيص.",
+          "3. التحقق من عمل الأضواء."
+        ]
       },
       {
+        "id": 43,
         "title": "Windscreen Washer Pump Test",
         "description": "اختبار مضخة غسيل الزجاج الأمامي.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/98e61f5539a545cfede9847ac8f79d3a_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/98e61f5539a545cfede9847ac8f79d3a_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار مضخة غسيل الزجاج الأمامي.",
+          "3. التحقق من عمل المضخة."
+        ]
       },
       {
+        "id": 44,
         "title": "Radiator Blind Opening and Closing ",
         "description": "اختبار فتح وإغلاق ستارة المبرد.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/191ec48271def6879338a979daa8a382_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/191ec48271def6879338a979daa8a382_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. تنفيذ اختبار ستارة المبرد.",
+          "3. التحقق من عملها."
+        ]
       },
       {
+        "id": 45,
         "title": "Steering Wheel Vibration Test",
         "description": "اختبار اهتزاز عجلة القيادة.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/05671bc403200ee80861cd573d2f049b_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/05671bc403200ee80861cd573d2f049b_oca_picture.jpg",
+        "ecu": "ICM",
+        "steps": [
+          "1. الدخول إلى وحدة ICM.",
+          "2. تنفيذ اختبار اهتزاز عجلة القيادة.",
+          "3. التحقق من عمل الاهتزاز."
+        ]
       },
       {
+        "id": 46,
         "title": "Engine Fan Test",
         "description": "اختبار مروحة المحرك.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/695fd1be4b24dfd3b5222090d16f520a_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/695fd1be4b24dfd3b5222090d16f520a_oca_picture.jpg",
+        "ecu": "DME",
+        "steps": [
+          "1. الدخول إلى وحدة DME.",
+          "2. تنفيذ اختبار مروحة المحرك.",
+          "3. التحقق من عمل المروحة."
+        ]
       },
       {
+        "id": 47,
         "title": "Horn Test",
         "description": "اختبار البوق.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/25004774a9c5fa633d3660c65c76ece0_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/25004774a9c5fa633d3660c65c76ece0_oca_picture.jpg",
+        "ecu": "BDC_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة BDC_BODY.",
+          "2. تنفيذ اختبار البوق.",
+          "3. التحقق من عمل البوق."
+        ]
       },
       {
+        "id": 48,
         "title": "Rear Fog Lights Test",
         "description": "اختبار أضواء الضباب الخلفية.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/91efcacfe9b197171c786f359ca28c20_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/91efcacfe9b17171c786f359ca28c20_oca_picture.jpg",
+        "ecu": "FEM_BODY",
+        "steps": [
+          "1. الدخول إلى وحدة FEM_BODY.",
+          "2. تنفيذ اختبار أضواء الضباب الخلفية.",
+          "3. التحقق من عمل الأضواء."
+        ]
       },
       {
+        "id": 49,
         "title": "Headlights Check",
         "description": "فحص المصابيح الأمامية.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/f0169c9a66aeaa3564a54473b65c9039_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/f0169c9a66aeaa3564a54473b65c9039_oca_picture.jpg",
+        "ecu": "FRM",
+        "steps": [
+          "1. الدخول إلى وحدة FRM.",
+          "2. تنفيذ فحص شامل للمصابيح الأمامية.",
+          "3. التحقق من عمل جميع أجزاء المصابيح."
+        ]
       },
       {
+        "id": 50,
         "title": "Instrument Cluster Lights Test",
         "description": "اختبار أضواء لوحة العدادات.",
         "category": "الصيانة",
         "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/06b677511a8683a43e283a03c7bb6f50_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/06b677511a8683a43e283a03c7bb6f50_oca_picture.jpg",
+        "ecu": "KOMBI",
+        "steps": [
+          "1. الدخول إلى وحدة KOMBI.",
+          "2. تنفيذ اختبار أضواء لوحة العدادات.",
+          "3. التحقق من إضاءة جميع المؤشرات."
+        ]
       },
       {
+        "id": 51,
         "title": "SOS Emergency Call System",
         "description": "فحص نظام الاتصال الطارئ SOS.",
         "category": "السلامة",
         "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/63c12ebda4e28525f79ced7e43280430_oca_picture.jpg"
-      }
-    ]
-  },
-  {
-    "model": "1-series",
-    "year": "2019-present",
-    "generation": "f40",
-    "activations": [
-      {
-        "title": "تفعيل وضع الرياضة الفردي",
-        "description": "تفعيل إمكانية تخصيص وضع القيادة الرياضية حسب تفضيلاتك الشخصية",
-        "category": "وضع القيادة",
-        "price": "120"
-      },
-      {
-        "title": "تفعيل إغلاق النوافذ من المفتاح",
-        "description": "إمكانية إغلاق جميع النوافذ عن طريق الضغط المطول على زر القفل في المفتاح",
-        "category": "الراحة",
-        "price": "80"
-      },
-      {
-        "title": "تفعيل وظيفة الترحيب الضوئي",
-        "description": "إضاءة المصابيح بنمط خاص عند فتح السيارة",
-        "category": "الإضاءة",
-        "price": "100"
-      },
-      {
-        "title": "5 Times Comfort Turn Signals",
-        "description": "تفعيل وميض إشارة الانعطاف 5 مرات بضغطة واحدة.",
-        "category": "الإضاءة",
-        "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/0e66d343c0e35fd1b560772027d43d62_oca_picture.jpg"
-      },
-      {
-        "title": "M Logo Startup Animation",
-        "description": "تغيير رسوم بدء التشغيل على شاشة iDrive إلى شعار M.",
-        "category": "العرض",
-        "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/c6084ab451c88bc8ef157eb3c16c83d8_oca_picture.jpg"
-      },
-      {
-        "title": "M View Style Cluster",
-        "description": "تفعيل نمط عرض M في لوحة العدادات.",
-        "category": "العرض",
-        "price": "120",
-        "image_url": "https://storage.obdeleven.com/parse/f8030b56910a732fe26c7d2fc3a6e2a9_oca_picture.jpg"
-      },
-      {
-        "title": "Default Driving Mode",
-        "description": "تعيين وضع القيادة الافتراضي عند بدء تشغيل السيارة.",
-        "category": "وضع القيادة",
-        "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/a29fd63d2f5ac00386477960dd2cb340_oca_picture.jpg"
-      },
-      {
-        "title": "Horn on Secure",
-        "description": "تفعيل صوت البوق عند قفل السيارة.",
-        "category": "الراحة",
-        "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/ec3ea21397f01a38cfacfec8a45f86e0_oca_picture.jpg"
-      },
-      {
-        "title": "TPMS Pressure and Temperature Display",
-        "description": "عرض ضغط ودرجة حرارة الإطارات في شاشة النظام.",
-        "category": "العرض",
-        "price": "110",
-        "image_url": "https://storage.obdeleven.com/parse/750b6938e0867d44071bbc032182c8cd_oca_picture.jpg"
-      },
-      {
-        "title": "iDrive Warnings",
-        "description": "تخصيص أو إيقاف تحذيرات iDrive.",
-        "category": "العرض",
-        "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/66b0c574cd714768234e1a7a15d798cb_oca_picture.jpg"
-      },
-      {
-        "title": "Front Fog Lights w/ High Beams",
-        "description": "تفعيل المصابيح الأمامية للضباب مع الأضواء العالية.",
-        "category": "الإضاءة",
-        "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/a06b85fa78830e85946ef8354f02a95c_oca_picture.jpg"
-      },
-      {
-        "title": "Front Fog Lights w/ Parking Lights",
-        "description": "تفعيل المصابيح الأمامية للضباب مع أضواء الوقوف.",
-        "category": "الإضاءة",
-        "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/d5b143538118c4617d57ca691c004a75_oca_picture.jpg"
-      },
-      {
-        "title": "Sport+ Mode",
-        "description": "تفعيل وضع Sport+ للقيادة الرياضية المعززة.",
-        "category": "وضع القيادة",
-        "price": "150",
-        "image_url": "https://storage.obdeleven.com/parse/c75546901cd815e8400b4c9e57c8fbda_oca_picture.jpg"
-      },
-      {
-        "title": "X-View Display",
-        "description": "تفعيل عرض X-View في شاشة العدادات (معلومات الطرق الوعرة).",
-        "category": "العرض",
-        "price": "140",
-        "image_url": "https://storage.obdeleven.com/parse/95a01cce6a9a4153c2482bbf90f114c9_oca_picture.jpg"
-      },
-      {
-        "title": "Tire Pressure Display in Dashboard",
-        "description": "عرض ضغط الإطارات مباشرة في لوحة العدادات.",
-        "category": "العرض",
-        "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/0834629027df2df27c0cadcf82a7331c_oca_picture.jpg"
-      },
-      {
-        "title": "Speedometer Scale Display",
-        "description": "عرض مقياس السرعة بتصميمات إضافية.",
-        "category": "العرض",
-        "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/7ce0f6abb9b268656316bc71ee153735_oca_picture.jpg"
-      },
-      {
-        "title": "Alpina Style Display",
-        "description": "تفعيل نمط عرض Alpina في لوحة العدادات.",
-        "category": "العرض",
-        "price": "160",
-        "image_url": "https://storage.obdeleven.com/parse/c873e490b1314a701f9bf13f0d73450d_oca_picture.jpg"
-      },
-      {
-        "title": "RLS Sensitivity",
-        "description": "تعديل حساسية مستشعر المطر والضوء.",
-        "category": "الإضاءة",
-        "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/2e9a187ad3e4975457c828d32b265d00_oca_picture.jpg"
-      },
-      {
-        "title": "Seats Heating/Cooling Memory",
-        "description": "تفعيل ذاكرة تسخين/تبريد المقاعد.",
-        "category": "الراحة",
-        "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/3bc5584b31e29dafb299a32a307548c1_oca_picture.jpg"
-      },
-      {
-        "title": "Self Locking Time",
-        "description": "تعديل وقت القفل التلقائي للأبواب.",
-        "category": "الراحة",
-        "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/017f0cfdfafb6470f1d675974345b4b9_oca_picture.jpg"
-      },
-      {
-        "title": "Power Front Windows Safety",
-        "description": "تعديل حساسية نظام أمان النوافذ الأمامية.",
-        "category": "الراحة",
-        "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/2605b25bfe3bf986a09a12dd6ccbafe2_oca_picture.jpg"
-      },
-      {
-        "title": "Emergency Braking Lights",
-        "description": "تفعيل أضواء الفرامل الوامضة في حالات الفرملة الطارئة.",
-        "category": "الإضاءة",
-        "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/b550b5057a30ee8204ffd16ec8a730e9_oca_picture.jpg"
-      },
-      {
-        "title": "LED License Plate Lights",
-        "description": "تعديل إعدادات أضواء لوحة الترخيص LED.",
-        "category": "الإضاءة",
-        "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/be7c9596369c14bf9a35bce7a9634dff_oca_picture.jpg"
-      },
-      {
-        "title": "Assisted Driving View",
-        "description": "تفعيل عرض مساعدة القيادة في الشاشة.",
-        "category": "مساعدة السائق",
-        "price": "130",
-        "image_url": "https://storage.obdeleven.com/parse/164733e1175a7eab139864fbfd94e301_oca_picture.jpg"
-      },
-      {
-        "title": "Acoustic Unlock Confirmation",
-        "description": "تفعيل صوت تأكيد فتح الأبواب.",
-        "category": "الراحة",
-        "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/daad8bd4bd769adee75ba9f287b93766_oca_picture.jpg"
-      },
-      {
-        "title": "Automatic Lane Change",
-        "description": "تفعيل وظيفة تغيير المسار التلقائي.",
-        "category": "مساعدة السائق",
-        "price": "180",
-        "image_url": "https://storage.obdeleven.com/parse/fcd9a3378aa7aa47880fbcd7704588d5_oca_picture.jpg"
-      },
-      {
-        "title": "Bower & Wilkins Audio",
-        "description": "تفعيل إعدادات صوت Bower & Wilkins (إذا كان النظام متوفرًا).",
-        "category": "الصوت",
-        "price": "200",
-        "image_url": "https://storage.obdeleven.com/parse/3acc77e1efe3590de5374403c43c7431_oca_picture.jpg"
-      },
-      {
-        "title": "12V Battery Registration",
-        "description": "تسجيل بطارية 12 فولت جديدة.",
-        "category": "الصيانة",
-        "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/9caeb45c0000578cee2c94f4dc644983_oca_picture.jpg"
-      },
-      {
-        "title": "Engine Sound Menu",
-        "description": "تفعيل قائمة إعدادات صوت المحرك.",
-        "category": "الصوت",
-        "price": "110",
-        "image_url": "https://storage.obdeleven.com/parse/a28d870764ebd97ea21cce79475e45cf_oca_picture.jpg"
-      },
-      {
-        "title": "Instrument Cluster Logo",
-        "description": "تغيير شعار لوحة العدادات.",
-        "category": "العرض",
-        "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/9281fcbd489723b44ffb99ea3f40e912_oca_picture.jpg"
-      },
-      {
-        "title": "Automatic Steering Wheel Heating",
-        "description": "تفعيل التسخين التلقائي لعجلة القيادة.",
-        "category": "الراحة",
-        "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/fa73e81d4d099184693965f006cedf88_oca_picture.jpg"
-      },
-      {
-        "title": "Ambient Lighting Instead of Bronze",
-        "description": "تغيير لون الإضاءة المحيطة من البرونزي.",
-        "category": "الإضاءة",
-        "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/2f4d0c62ee132453ff0bced6d80618c8_oca_picture.jpg"
-      },
-      {
-        "title": "Ambient Color Instead of Bronze",
-        "description": "تغيير لون الإضاءة المحيطة من البرونزي.",
-        "category": "الإضاءة",
-        "price": "70",
-        "image_url": "https://storage.obdeleven.com/parse/26e104be19815c2325202b469119bac7_oca_picture.jpg"
-      },
-      {
-        "title": "Rain Closing",
-        "description": "إغلاق النوافذ وفتحة السقف تلقائيًا عند استشعار المطر.",
-        "category": "الراحة",
-        "price": "120",
-        "image_url": "https://storage.obdeleven.com/parse/36d4dc3fa8e848c0d6a2f74f26733a39_oca_picture.jpg"
-      },
-      {
-        "title": "Scandinavian DRLs",
-        "description": "تفعيل أضواء النهار الاسكندنافية.",
-        "category": "الإضاءة",
-        "price": "80",
-        "image_url": "https://storage.obdeleven.com/parse/8722d3c8cc595754444c10f2b88896c9_oca_picture.jpg"
-      },
-      {
-        "title": "M View Cluster Logo",
-        "description": "تفعيل شعار M في لوحة العدادات بنمط العرض M.",
-        "category": "العرض",
-        "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/8b5fe8386d999b366f513f18496d7230_oca_picture.jpg"
-      },
-      {
-        "title": "Rear Seat Belts Reminder Menu",
-        "description": "تفعيل قائمة تذكير أحزمة الأمان للمقاعد الخلفية.",
-        "category": "السلامة",
-        "price": "60",
-        "image_url": "https://storage.obdeleven.com/parse/5c692f5330b674a618b7afa3604add04_oca_picture.jpg"
-      },
-      {
-        "title": "Active Sound Design Deactivation",
-        "description": "إلغاء تنشيط نظام الصوت النشط (ASD).",
-        "category": "الصوت",
-        "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/159a4022221dacd99df5556dead2d5bb_oca_picture.jpg"
-      },
-      {
-        "title": "ECO PRO Coasting Mode",
-        "description": "تفعيل وضع الانزلاق في ECO PRO.",
-        "category": "وضع القيادة",
-        "price": "90",
-        "image_url": "https://storage.obdeleven.com/parse/40b747b342a0e62a4cb41e010cbd8b3c_oca_picture.jpg"
-      },
-      {
-        "title": "Comfort+ Mode",
-        "description": "تفعيل وضع Comfort+.",
-        "category": "وضع القيادة",
-        "price": "130",
-        "image_url": "https://storage.obdeleven.com/parse/c4e5ef27ac26d52bc4fc01c0be79da6e_oca_picture.jpg"
-      },
-      {
-        "title": "Brake Lights Test",
-        "description": "اختبار أضواء الفرامل.",
-        "category": "الصيانة",
-        "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/79c83239c057fff25d0ffc0290e44f83_oca_picture.jpg"
-      },
-      {
-        "title": "Reversing Lights Test",
-        "description": "اختبار أضواء الرجوع للخلف.",
-        "category": "الصيانة",
-        "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/44ecec72499c9f1c68a9bbd6381c4577_oca_picture.jpg"
-      },
-      {
-        "title": "Windscreen Washer Pump Test",
-        "description": "اختبار مضخة غسيل الزجاج الأمامي.",
-        "category": "الصيانة",
-        "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/98e61f5539a545cfede9847ac8f79d3a_oca_picture.jpg"
-      },
-      {
-        "title": "Radiator Blind Opening and Closing ",
-        "description": "اختبار فتح وإغلاق ستارة المبرد.",
-        "category": "الصيانة",
-        "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/191ec48271def6879338a979daa8a382_oca_picture.jpg"
-      },
-      {
-        "title": "Steering Wheel Vibration Test",
-        "description": "اختبار اهتزاز عجلة القيادة.",
-        "category": "الصيانة",
-        "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/05671bc403200ee80861cd573d2f049b_oca_picture.jpg"
-      },
-      {
-        "title": "Engine Fan Test",
-        "description": "اختبار مروحة المحرك.",
-        "category": "الصيانة",
-        "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/695fd1be4b24dfd3b5222090d16f520a_oca_picture.jpg"
-      },
-      {
-        "title": "Horn Test",
-        "description": "اختبار البوق.",
-        "category": "الصيانة",
-        "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/25004774a9c5fa633d3660c65c76ece0_oca_picture.jpg"
-      },
-      {
-        "title": "Rear Fog Lights Test",
-        "description": "اختبار أضواء الضباب الخلفية.",
-        "category": "الصيانة",
-        "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/91efcacfe9b197171c786f359ca28c20_oca_picture.jpg"
-      },
-      {
-        "title": "Headlights Check",
-        "description": "فحص المصابيح الأمامية.",
-        "category": "الصيانة",
-        "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/f0169c9a66aeaa3564a54473b65c9039_oca_picture.jpg"
-      },
-      {
-        "title": "Instrument Cluster Lights Test",
-        "description": "اختبار أضواء لوحة العدادات.",
-        "category": "الصيانة",
-        "price": "50",
-        "image_url": "https://storage.obdeleven.com/parse/06b677511a8683a43e283a03c7bb6f50_oca_picture.jpg"
-      },
-      {
-        "title": "SOS Emergency Call System",
-        "description": "فحص نظام الاتصال الطارئ SOS.",
-        "category": "السلامة",
-        "price": "100",
-        "image_url": "https://storage.obdeleven.com/parse/63c12ebda4e28525f79ced7e43280430_oca_picture.jpg"
+        "image_url": "https://storage.obdeleven.com/parse/63c12ebda4e28525f79ced7e43280430_oca_picture.jpg",
+        "ecu": "TELEMATIK",
+        "steps": [
+          "1. الدخول إلى وحدة TELEMATIK.",
+          "2. تنفيذ فحص لنظام SOS.",
+          "3. التأكد من جاهزية النظام."
+        ]
       }
     ]
   }
